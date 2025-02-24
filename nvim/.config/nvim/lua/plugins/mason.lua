@@ -11,6 +11,7 @@ return {
         "lua_ls",
         -- add more arguments for adding more language servers
         "jdtls",
+        "clangd",
       },
     },
   },

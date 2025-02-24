@@ -10,4 +10,9 @@ return {
   { import = "astrocommunity.diagnostics.trouble-nvim" },
   { import = "astrocommunity.scrolling.mini-animate" },
   { import = "astrocommunity.colorscheme.rose-pine" },
+
+  -- tmux
+  { import = "astrocommunity.terminal-integration.vim-tmux-navigator" },
+  { import = "astrocommunity.terminal-integration.vim-tmux-yank" },
+  { import = "astrocommunity.bars-and-lines.lualine-nvim" },
 }

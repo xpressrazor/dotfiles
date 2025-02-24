@@ -1,0 +1,19 @@
+/* @import "./rose-pine.css"; */
+@import "./rose-pine-moon.css";
+/* @import "./rose-pine-dawn.css"; */
+
+* {
+  /* reference the color by using @color-name */
+  background: @surface;
+  border: 1px solid @surface; 
+  border-radius: 5px;
+}
+
+#memory {
+  color: @foam;
+}
+
+#temperature {
+  color: @rose;
+}
+
