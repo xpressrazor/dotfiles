@@ -26,24 +26,18 @@
         "disable-scroll": true,
          "all-outputs": true,
          "warp-on-scroll": false,
-         "format": "{name}: {icon}",
+         //"format": "{name}: {icon}",
+         "format": "{name}",
+         //"format" : "{name}n{windows}",
+         //"format-window-separator" : "n",
          "format-icons": {
              "urgent": "",
              "active": "",
              "default": ""
          }
      },
-    "keyboard-state": {
-        "numlock": true,
-        "capslock": true,
-        "format": "{name} {icon}",
-        "format-icons": {
-            "locked": "",
-            "unlocked": ""
-        }
-    },
-    "mpd": {
-        "format": "{stateIcon} {consumeIcon}{randomIcon}{repeatIcon}{singleIcon}{artist} - {album} - {title} ({elapsedTime:%M:%S}/{totalTime:%M:%S}) ⸨{songPosition}|{queueLength}⸩ {volume}% ",
+     "mpd": {
+        "format": " {stateIcon} {consumeIcon}{randomIcon}{repeatIcon}{singleIcon}{artist} - {album} - {title} ({elapsedTime:%M:%S}/{totalTime:%M:%S}) ⸨{songPosition}|{queueLength}⸩ {volume}% ",
         "format-disconnected": "Disconnected ",
         "format-stopped": "{consumeIcon}{randomIcon}{repeatIcon}{singleIcon}Stopped ",
         "unknown-tag": "N/A",
@@ -85,7 +79,7 @@
         "format-alt": "{:%Y-%m-%d}"
     },
     "cpu": {
-        "format": "{usage}% ",
+        "format": "{usage}%  ",
         "tooltip": false
     },
     "memory": {
@@ -144,10 +138,18 @@
     },
     "pulseaudio": {
         // "scroll-step": 1, // %, can be a float
+
+        /*
         "format": "{volume}% {icon} {format_source}",
         "format-bluetooth": "{volume}% {icon} {format_source}",
         "format-bluetooth-muted": " {icon} {format_source}",
         "format-muted": " {format_source}",
+        */
+        "format": " {volume}% {icon} ",
+        "format-bluetooth": " {volume}% {icon} ",
+        "format-bluetooth-muted": "  {icon} ",
+        "format-muted": "   ",
+
         "format-source": "{volume}% ",
         "format-source-muted": "",
         "format-icons": {
@@ -162,7 +164,8 @@
         "on-click": "pavucontrol"
     },
     "custom/media": {
-        "format": "{icon} {text}",
+        /*"format": "{icon} {text}",*/
+        "format" : "{icon} ",
         "return-type": "json",
         "max-length": 40,
         "format-icons": {
@@ -174,7 +177,7 @@
         // "exec": "$HOME/.config/waybar/mediaplayer.py --player spotify 2> /dev/null" // Filter player based on name
     },
     "custom/power": {
-        "format" : "⏻ ",
+        "format" : " ⏻ ",
 		"tooltip": false,
 		"menu": "on-click",
 		"menu-file": "$HOME/.config/waybar/power_menu.xml", // Menu file in resources folder

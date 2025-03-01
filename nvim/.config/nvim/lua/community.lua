@@ -15,4 +15,7 @@ return {
   { import = "astrocommunity.terminal-integration.vim-tmux-navigator" },
   { import = "astrocommunity.terminal-integration.vim-tmux-yank" },
   { import = "astrocommunity.bars-and-lines.lualine-nvim" },
+
+  -- compiler
+  { import = "astrocommunity.code-runner.compiler-nvim" },
 }

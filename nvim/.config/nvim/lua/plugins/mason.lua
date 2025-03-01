@@ -32,6 +32,8 @@ return {
     opts = {
       ensure_installed = {
         "python",
+        "cpptools",
+        "java-test",
         -- add more arguments for adding more debuggers
       },
     },
