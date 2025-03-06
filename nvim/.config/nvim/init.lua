@@ -20,3 +20,12 @@ require "polish"
 vim.cmd "colorscheme rose-pine"
 -- vim.cmd "colorscheme catppuccin"
 vim.o.termguicolors = true
+
+-- Mapping
+vim.keymap.set("", "<Up>", "<Nop>")
+vim.keymap.set("", "<Down>", "<Nop>")
+vim.keymap.set("", "<Left>", "<Nop>")
+vim.keymap.set("", "<Right>", "<Nop>")
+
+-- Compile
+vim.keymap.set("n", "<F10>", function() vim.cmd "!build.sh %" end)
