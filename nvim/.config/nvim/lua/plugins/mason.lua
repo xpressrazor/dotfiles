@@ -12,6 +12,7 @@ return {
         -- add more arguments for adding more language servers
         "jdtls",
         "clangd",
+        "mesonlsp",
       },
     },
   },
