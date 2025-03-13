@@ -25,7 +25,8 @@ alias nsoln='cd ~/Programming/ && nvim'
 alias nhypr='cd ~/.config/hypr && nvim hyprland.conf'
 alias r='ranger'
 alias nc='ncmpcpp'
-alias nnotes='cd ~/Sync/mynotes/ && nvim'
+alias note='nvim ~/Sync/mynotes/note/note.md'
+alias todo='nvim ~/Sync/mynotes/note/todo.md'
 
 PROMPT='󰘧 '
 
