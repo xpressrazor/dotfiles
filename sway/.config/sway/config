@@ -30,8 +30,8 @@ output * bg /usr/share/backgrounds/sway/Sway_Wallpaper_Blue_1920x1080.png fill
 #
 # You can get the names of your outputs by running: swaymsg -t get_outputs
 output eDP-1 {
-   mode 1920x1200
    background ~/Pictures/Wallpapers/woman/wallhaven-3lv3q6.jpg fill
+   resolution 1920x1200
 }
 
 
@@ -156,7 +156,7 @@ input "type:touchpad" {
     # Switch the current container between different layout styles
     bindsym $mod+s layout stacking
     bindsym $mod+w layout tabbed
-    bindsym $mod+e layout toggle split
+    bindsym $mod+y layout toggle split
 
     # Make the current focus fullscreen
     bindsym $mod+m fullscreen
@@ -241,10 +241,44 @@ titlebar_border_thickness 0
 default_floating_border none
 font pango:Any_font_name 0.001
 
+set $system_theme 'catppuccin-mocha-pink-standard+default'
+set $system_icons 'ePapirus'
+set $system_dpi_scaling_factor 1.0
+set $cursor_size  24
+#set $cursor_theme Breeze
+set $cursor_theme catppuccin-mocha-flamingo-cursors
+set $titlebar_text_size 16
+set $titlebar_font Cantarell
+
+# GTK
+# This is the only place where you must set GTK scaling
+set $gnome-schema org.gnome.desktop.interface
+exec_always {
+  gsettings set $gnome-schema gtk-theme $system_theme
+  gsettings set $gnome-schema icon-theme $system_icons
+  gsettings set $gnome-schema text-scaling-factor $system_dpi_scaling_factor
+  gsettings set $gnome-schema cursor-theme $cursor_theme
+  gsettings set $gnome-schema cursor-size $cursor_size
+}
+
+# Mouse
+seat seat0 xcursor_theme $cursor_theme $cursor_size
+
+# Fonts (For sway window titles only)
+font pango:$titlebar_font $titlebar_text_size
+
+# Opacity
+#set $opacity 0.99
+#for_window [class=".*"] opacity $opacity
+#for_window [app_id=".*"] opacity $opacity
+
+exec --no-startup-id /usr/lib/pam_kwallet_init
+exec --no-startup-id /usr/bin/nm-applet --indicator
+
+
+bindsym $mod+f exec flatpak run one.ablaze.floorp
+bindsym $mod+e exec pcmanfm-qt
+
 set $lock_bg ~/Pictures/Wallpapers/anime/wallhaven-gpo1g3.jpg
-
 bindsym Ctrl+Mod1+l exec swaylock --hide-keyboard-layout -i $lock_bg
-
-#exec /usr/bin/nm-applet --indicator
-
 
