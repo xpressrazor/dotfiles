@@ -21,6 +21,14 @@ window#waybar.hidden {
     opacity: 0.2;
 }
 
+#custom-app {
+    background-color: #e3e1bf;
+    color: #1c73c9;
+    min-width: 30px;
+    padding: 1px 1px;
+    margin: 3px 3px;
+}
+
 /*
 window#waybar.empty {
     background-color: transparent;
@@ -133,6 +141,7 @@ button:hover {
 
 #clock {
     background-color: #bbccdd;
+    color:#455c58;
 }
 
 #battery {
@@ -142,7 +151,7 @@ button:hover {
 
 #battery.charging, #battery.plugged {
     color: #ffffff;
-    background-color: #b8bb26;
+    background-color: #c0d99c;
 }
 
 @keyframes blink {
@@ -258,8 +267,8 @@ label:focus {
 }
 
 #tray {
-    background-color: #F9CB9C;
-    color: #666666;
+    color: #a4a69f;
+    background-color: #818a5f;
 }
 
 #tray > .passive {

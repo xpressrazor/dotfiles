@@ -280,5 +280,5 @@ bindsym $mod+f exec flatpak run one.ablaze.floorp
 bindsym $mod+e exec pcmanfm-qt
 
 set $lock_bg ~/.config/sway/background/animelock.jpg
-bindsym Ctrl+Mod1+l exec swaylock --hide-keyboard-layout -i $lock_bg --key-hl-color F9CB9C --ring-color a89152
+bindsym Ctrl+Mod1+l exec swaylock
 

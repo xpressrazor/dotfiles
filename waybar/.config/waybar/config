@@ -1,12 +1,13 @@
 // -*- mode: jsonc -*-
 {
     // "layer": "top", // Waybar at top layer
-    // "position": "bottom", // Waybar position (top|bottom|left|right)
+    "position": "bottom", // Waybar position (top|bottom|left|right)
     "height": 12, // Waybar height (to be removed for auto height)
     // "width": 1280, // Waybar width
     "spacing": 4, // Gaps between modules (4px)
     // Choose the order of the modules
     "modules-left": [
+        "custom/app",
         "sway/workspaces",
         "sway/mode",
         "sway/scratchpad",
@@ -29,22 +30,25 @@
         "custom/power"
     ],
     // Modules configuration
-    // "sway/workspaces": {
-    //     "disable-scroll": true,
-    //     "all-outputs": true,
-    //     "warp-on-scroll": false,
-    //     "format": "{name}: {icon}",
-    //     "format-icons": {
-    //         "1": "",
-    //         "2": "",
-    //         "3": "",
-    //         "4": "",
-    //         "5": "",
-    //         "urgent": "",
-    //         "focused": "",
-    //         "default": ""
-    //     }
-    // },
+     "sway/workspaces": {
+         "disable-scroll": false,
+         "all-outputs": true,
+         "persistent-workspaces" : {
+             "1": [],
+             "2": [],
+             "3": [],
+             "4": [],
+             "5": [],
+         },
+         "format": "{icon}",
+         "format-icons": {
+             "1": "",
+             "2": "",
+             "3": "",
+             "4": "󰯁",
+             "5": "󰎁",
+          },
+    },
     "keyboard-state": {
         "numlock": true,
         "capslock": true,
@@ -53,6 +57,9 @@
             "locked": "",
             "unlocked": ""
         }
+    },
+    "sway/window" : {
+        "max-length" : 50,
     },
     "sway/mode": {
         "format": "<span style=\"italic\">{}</span>"
@@ -205,7 +212,11 @@
 			"reboot": "reboot",
 			"suspend": "systemctl suspend",
 			"hibernate": "systemctl hibernate",
-			"lock": "swaylock --hide-keyboard-layout -i ~/.config/sway/background/animelock.jpg --key-hl-color F9CB9C --ring-color a89152"
+			"lock": "swaylock"
 		}
-    }
+    },
+    "custom/app": {
+        "format" : "󰣇",
+        "on-click": "wofi --show drun"
+    },
 }
