@@ -28,7 +28,15 @@ alias nc='ncmpcpp'
 alias note='nvim ~/Sync/mynotes/note/note.md'
 alias todo='nvim ~/Sync/mynotes/note/todo.md'
 
+## Flatpak
+alias nomacs='flatpak run org.nomacs.ImageLounge'
+
 PROMPT='󰘧 '
+
+# Auto login
+if [ -z "$WAYLAND_DISPLAY" ] && [ -n "$XDG_VTNR" ] && [ "$XDG_VTNR" -eq 1 ] ; then
+    exec sway --unsupported-gpu
+fi
 
 
 # study stream aliases
@@ -51,3 +59,4 @@ pomodoro () {
 
 alias wo="pomodoro 'work'"
 alias br="pomodoro 'break'"
+

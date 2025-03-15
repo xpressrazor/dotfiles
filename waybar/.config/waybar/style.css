@@ -1,78 +1,202 @@
-/* @import "./rose-pine.css"; */
-@import "./rose-pine.css";
-/* @import "./rose-pine-dawn.css"; */
-
 * {
-  /* background: @surface; */
-  background: transparent;
-  /*border: 1px solid @surface;*/
-  background-color: @base;
-  color: @accent5; 
-  transition-property: background-color;
-  transition-duration: 0.1s;
-  /*border-radius: 5px;*/
-  border-bottom: 1px solid @base;
-}
-
-button {
-    /*box-shadow: inset 0 -3px transparent;*/
     border: none;
     border-radius: 0;
+    /* `otf-font-awesome` is required to be installed for icons */
+    font-family:"MesloLGS NF";
+/*    font-family:"Source Code Pro";*/
+    font-size: 12px;
+    font-weight: 600;
+    min-height: 0;
 }
 
-button:hover {
-    background: inherit;
-    color: @rose;
-    border-top: 2px solid @accent2;
+window#waybar {
+    /*background-color: #282c34;*/
+    background-color: #282828;
+    /*border-bottom: 1px solid @unfocused_borders;*/
 }
+
+window#waybar.hidden {
+    opacity: 0.2;
+}
+
+/*
+window#waybar.empty {
+    background-color: transparent;
+}
+window#waybar.solo {
+    background-color: #FFFFFF;
+}
+*/
 
 #workspaces button {
-    /*padding: 0 4px;*/ 
-    padding: 1 15px;
-    color: @base;
-    background-clip: content-box;
-    box-shadow: inset 0 0 0 20px @base;
+    padding: 0 5px;
+    background-color:#282828;
+    color: #ebdbb2;
+    /* Use box-shadow instead of border so the text isn't offset */
+    /* box-shadow: inset 0 -3px transparent;*/
+}
+
+/* https://github.com/Alexays/Waybar/wiki/FAQ#the-workspace-buttons-have-a-strange-hover-effect */
+#workspaces button:hover {
+    background: #282828;
+   /* box-shadow: inset 0 -3px #ffffff;*/
 }
 
 #workspaces button.focused {
-    background-color: rgba(0, 0, 0, 0.3);
-    color: @base;
-    border-top: 2px solid @base;
-    border-right: 2px solid @base;
-    border-bottom: 2px solid @base;
-    border-left: 2px solid @base;
-}
-
-#workspaces button.active {
-    background-color: rgba(0, 0, 0, 0.3);
-    color: @gold;
-    border-top: 2px solid @gold;
-    border-right: 2px solid @gold;
-    border-bottom: 2px solid @gold;
-    border-left: 2px solid @gold;
+    background-color: #ebdbb2;
+    color:#282828;
+   /* box-shadow: inset 0 -3px #ffffff;*/
 }
 
 #workspaces button.urgent {
-    background-color: #eb4d4b;
+    background-color: #fb4934;
 }
 
+#mode {
+    background-color: #b8bb26;
+   /* border-bottom: 3px solid #ffffff;*/
+}
 
-#memory {
-  color: @foam;
+#custom-test,
+#custom-dnf,
+#temperature,
+#idle_inhibitor,
+#clock,
+#memory,
+#pulseaudio,
+#tray,
+#mode{
+     padding-left:10px;
+     padding-right:10px;
+    /* margin: 0 0px;*/
+     color: #282828;
+}
+#custom-powermenu{
+        padding-left:10px;
+        padding-right:10px;
+        margin:  0 0px;
+        background-color:#fb4934;
+        color:#282828;
+}
+#window{
+       margin-right: 40px;
+       margin-left: 40px; 
+}
+#workspaces {
+    margin: 0 0px;
+}
+
+/* If workspaces is the leftmost module, omit left margin */
+.modules-left > widget:first-child > #workspaces {
+    margin-left: 0;
+}
+
+/* If workspaces is the rightmost module, omit right margin */
+.modules-right > widget:last-child > #workspaces {
+    margin-right: 0;
+}
+#idle_inhibitor {
+    background-color: #928374;
+    color:#282828;
+}
+#custom-dnf {
+    background-color: #504945;
+    color: #ebdbb2;
+}
+
+#custom-test {
+    background-color: #928374;
+    color: #282828;
 }
 
 #temperature {
-  color: @rose;
+    background-color: #504945;
+    color:#ebdbb2;
 }
 
-#custom-power {
-  color: @accent1;
-} 
+#clock {
+    background-color: #504945;
+    color:#ebdbb2;
+}
+@keyframes blink {
+    to {
+        background-color: #ffffff;
+    }
+}
 
-#power-profiles-daemon {
-  color: @accent2 
+label:focus {
+    background-color: #000000;
+}
+
+#memory {
+    background-color: #928374;
+    color:#282828;
 }
 
 #pulseaudio {
-  color: @foam;
+    background-color: #504945;
+    color:#ebdbb2;
 }
+
+#pulseaudio.muted {
+    background-color: #ebdbb2;
+    color: #2a5c45;
+}
+
+#tray {
+    background-color: #fe8019;
+}
+#custom-arrow1 {
+    font-size: 16px;
+    color:#504945;
+    background:transparent ;
+}
+
+#custom-arrow2 {
+    font-size: 16px;
+    color:#928374;
+    background: #504945;
+}
+
+#custom-arrow3 {
+    font-size: 16px;
+    color: #504945;
+    background: #928374;
+}
+
+#custom-arrow4 {
+    font-size: 16px;
+    color: #fe8019;
+    background: #504945;
+}
+
+#custom-arrow5 {
+    font-size: 16px;
+    color: #fb4934;
+    background: #fe8019;
+}
+
+#custom-arrow6 {
+    font-size: 16px;
+    color:#928374;
+    background: #504945;
+}
+
+#custom-arrow7 {
+    font-size: 16px;
+    color: #504945;
+    background: #928374;
+}
+
+#custom-arrow8 {
+    font-size: 16px;
+    color:#928374;
+    background: #504945;
+}
+
+#custom-arrow9 {
+    font-size: 16px;
+    color: #504945;
+    background: #928374;
+}
+
