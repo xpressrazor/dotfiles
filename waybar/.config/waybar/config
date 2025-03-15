@@ -18,7 +18,7 @@
     ],
     "modules-right": [
         "pulseaudio",
-        "network",
+        //"network",
         "memory",
         "temperature",
         "backlight",
@@ -108,10 +108,9 @@
         // "icon-size": 21,
         "spacing": 10
     },
-    "clock": {
-        // "timezone": "America/New_York",
+    "clock": { 
+        "format": "{0:%I:%M}",
         "tooltip-format": "<big>{:%Y %B}</big>\n<tt><small>{calendar}</small></tt>",
-        "format-alt": "{:%Y-%m-%d}"
     },
     "cpu": {
         "format": "{usage}% ",
@@ -188,7 +187,7 @@
             "car": "",
             "default": ["", "", ""]
         },
-        "on-click": "pavucontrol"
+        "on-click": "flatpak run com.saivert.pwvucontrol"
     },
     "custom/media": {
         "format": "{icon} {text}",
