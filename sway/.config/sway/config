@@ -19,7 +19,7 @@ set $term kitty
 #set $menu wmenu-run
 set $menu wofi --show drun
 
-### Output configuration
+### nOutput configuration
 #
 # Default wallpaper (more resolutions are available in /usr/share/backgrounds/sway/)
 output * bg /usr/share/backgrounds/sway/Sway_Wallpaper_Blue_1920x1080.png fill
@@ -30,7 +30,8 @@ output * bg /usr/share/backgrounds/sway/Sway_Wallpaper_Blue_1920x1080.png fill
 #
 # You can get the names of your outputs by running: swaymsg -t get_outputs
 output eDP-1 {
-   mode 1920x1200@60.0Hz
+   mode 1920x1200
+   background ~/Pictures/Wallpapers/woman/wallhaven-3lv3q6.jpg fill
 }
 
 
@@ -232,6 +233,13 @@ bar {
     swaybar_command waybar
 }
 include /etc/sway/config.d/*
+
+hide_edge_borders both
+default_border none
+titlebar_padding 1
+titlebar_border_thickness 0
+default_floating_border none
+font pango:Any_font_name 0.001
 
 set $lock_bg ~/Pictures/Wallpapers/anime/wallhaven-gpo1g3.jpg
 
