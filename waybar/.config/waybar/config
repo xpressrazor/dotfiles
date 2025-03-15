@@ -204,7 +204,8 @@
 			"shutdown": "shutdown",
 			"reboot": "reboot",
 			"suspend": "systemctl suspend",
-			"hibernate": "systemctl hibernate"
+			"hibernate": "systemctl hibernate",
+			"lock": "swaylock --hide-keyboard-layout -i ~/.config/sway/background/animelock.jpg --key-hl-color F9CB9C --ring-color a89152"
 		}
     }
 }
