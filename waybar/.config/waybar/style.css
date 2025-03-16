@@ -1,20 +1,23 @@
 * {
     /* `otf-font-awesome` is required to be installed for icons */
-    font-family: "Roboto Mono Medium", FontAwesome, Roboto, Helvetica, Arial, sans-serif;
-    font-size: 11px;
+    font-family: "JetBrains Mono Nerd Font", FontAwesome, Roboto, Helvetica, Arial, sans-serif;
+    font-size: 97%;
+    font-weight: bold;
     border-radius: 4px;
     min-height: 0;
-    border: none;
+    font-feature-settings: '"zero", "ss01", "ss02", "ss03", "ss04", "ss05", "cv31"';
+    /*border: none;*/
+    padding: 1px;
 }
 
 window#waybar {
-    /*background-color: rgba(43, 48, 59, 0.9);*/
-    background-color: rgba(155, 128, 98, 0.9);
+    /*background-color: rgba(155, 128, 98, 0.70);*/
+    background-color: rgba(55, 0, 95, 0.2);
     border-bottom: 3px solid rgba(100, 114, 125, 0.5);
     color: #D9EAD3;
     transition-property: background-color;
     transition-duration: .5s;
-    border-radius: 0;
+    border-radius: 1px;
 }
 
 window#waybar.hidden {
@@ -24,19 +27,10 @@ window#waybar.hidden {
 #custom-app {
     background-color: #e3e1bf;
     color: #1c73c9;
-    min-width: 30px;
+    min-width: 40px;
     padding: 1px 1px;
-    margin: 3px 3px;
+    margin: 2px 2px;
 }
-
-/*
-window#waybar.empty {
-    background-color: transparent;
-}
-window#waybar.solo {
-    background-color: #FFFFFF;
-}
-*/
 
 window#waybar.termite {
     background-color: #3F3F3F;
@@ -66,13 +60,6 @@ button:hover {
     background-color: #a37800;
 }
 
-/*
-#workspaces button {
-    padding: 0.1em 0.4em;
-    background-color: transparent;
-    color: #ffffff;
-}
-*/
 #workspaces button {
     padding: 0 5px;
     background-color: transparent;
@@ -121,7 +108,7 @@ button:hover {
 #mpd {
     padding: 0 10px;
     margin: 6px 3px;
-    color: #333333;
+    color: #000000;
 }
 
 #window,
@@ -140,17 +127,15 @@ button:hover {
 }
 
 #clock {
+    color: #000000;
     background-color: #bbccdd;
-    color:#455c58;
 }
 
 #battery {
     background-color: #CDFFDD;
-    color: #000000;
 }
 
 #battery.charging, #battery.plugged {
-    color: #ffffff;
     background-color: #c0d99c;
 }
 
@@ -210,6 +195,7 @@ label:focus {
 
 #backlight {
     background-color: #90b1b1;
+    color: #000000;
 }
 
 #network {
@@ -262,13 +248,13 @@ label:focus {
 }
 
 #custom-power {
-    background-color: #D5A6BD; 
+    background-color: #E6679A; 
     color: #CFE2F3;
 }
 
 #tray {
     color: #a4a69f;
-    background-color: #818a5f;
+    background-color: #6e6c25;
 }
 
 #tray > .passive {
