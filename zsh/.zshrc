@@ -24,15 +24,19 @@ alias ncfg='cd ~/.config/nvim/ && nvim init.lua'
 alias nsoln='cd ~/Programming/ && nvim'
 alias nhypr='cd ~/.config/hypr && nvim hyprland.conf'
 alias nsway='cd ~/.config/sway && nvim config'
+alias nwaybar='cd ~/.config/waybar && nvim config'
 alias r='ranger'
 alias nc='ncmpcpp'
 alias note='nvim ~/Sync/mynotes/note/note.md'
 alias todo='nvim ~/Sync/mynotes/note/todo.md'
+alias t='tmux'
 
 ## Flatpak
 alias nomacs='flatpak run org.nomacs.ImageLounge'
 
 PROMPT='󰘧 '
+
+export XDG_CURRENT_DESKTOP=sway
 
 # Auto login
 if [ -z "$WAYLAND_DISPLAY" ] && [ -n "$XDG_VTNR" ] && [ "$XDG_VTNR" -eq 1 ] ; then
@@ -42,6 +46,7 @@ fi
 
 # study stream aliases
 # Requires https://github.com/caarlos0/timer to be installed. spd-say should ship with your distro
+#
 # yay -S timer-bin speech-dispatcher lolcat
 # For voice Install Pied from here https://github.com/Elleo/pied?tab=readme-ov-file, after initial setup, download and set up voice from the GUI
 
@@ -61,3 +66,6 @@ pomodoro () {
 alias wo="pomodoro 'work'"
 alias br="pomodoro 'break'"
 
+export QT_QPA_PLATFORM="wayland;xcb"
+export QT_QPA_PLATFORMTHEME="qt5ct"
+export XCURSOR_PATH=/usr/share/icons:~/.icons

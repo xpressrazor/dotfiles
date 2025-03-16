@@ -71,6 +71,10 @@ input "type:touchpad" {
     middle_emulation enabled
 }
 
+input "type:keyboard" {
+    xkb_options caps:ctrl_modifier
+}
+
 ### Key bindings
 #
 # Basics:
@@ -275,8 +279,14 @@ font pango:$titlebar_font $titlebar_text_size
 #for_window [class=".*"] opacity $opacity
 #for_window [app_id=".*"] opacity $opacity
 
+exec --no-startup-id /usr/lib/xdg-desktop-portal -r
+
 exec --no-startup-id /usr/lib/pam_kwallet_init
 exec --no-startup-id /usr/bin/nm-applet --indicator
+exec --no-startup-id wlsunset -S 6:00 -s 18:00 -t 3500 -d 600
+
+# Clipboard manager clipman
+exec wl-paste -t text --watch clipman store --no-persist
 
 
 bindsym $mod+f exec flatpak run one.ablaze.floorp
