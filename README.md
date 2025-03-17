@@ -43,3 +43,12 @@ E.g.
  pacman -S ly
  sudo systemctl enable ly
 ```
+
+# For nvidia
+Use one of the followings (switch to a different one from which is currently active, use envycontrol -q to query current mode) to generate necessary config files 
+```
+envycontrol -s integrated
+envycontrol -s nvidia
+envycontrol -s hybrid
+```
+
