@@ -16,7 +16,8 @@ chsh -s /bin/zsh
 # Install nececssary icon, cursor and gtk theme first
 # Copy the theme, icon and cursor files to ~/.themes, ~/.icons (cursor and desktop icons), if cursor is not part of icons
 
-mkdir ~/.icons ~/.themes
+mkdir -p ~/.icons 
+mkdir -p ~/.themes
 cp -r /usr/share/icons/catppuccin-mocha-flamingo-cursors ~/.icons
 cp -r /usr/share/icons/Papirus-Dark ~/.icons
 cp -r /usr/share/themes/catppuccin-mocha-pink-standard+default ~/.themes
