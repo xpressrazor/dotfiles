@@ -23,3 +23,5 @@ sudo flatpak override --env=ICON_THEME=Papirus-Dark
 sudo flatpak override --env=XCURSOR_PATH=$HOME/.icons
 sudo flatpak override --env=XCURSOR_THEME=catppuccin-mocha-flamingo-cursors
 
+cd ~/dotfiles
+stow kitty nvim swaylock waybar zsh okular sway tmux wofi
