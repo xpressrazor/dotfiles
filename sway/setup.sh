@@ -17,9 +17,9 @@ chsh -s /bin/zsh
 # Copy the theme, icon and cursor files to ~/.themes, ~/.icons (cursor and desktop icons), if cursor is not part of icons
 
 mkdir ~/.icons ~/.themes
-cp /usr/share/icons/catppuccin-mocha-flamingo-cursors ~/.icons
-cp /usr/share/icons/Papirus-Dark ~/.icons
-cp /usr/share/themes/catppuccin-mocha-pink-standard+default ~/.themes
+cp -r /usr/share/icons/catppuccin-mocha-flamingo-cursors ~/.icons
+cp -r /usr/share/icons/Papirus-Dark ~/.icons
+cp -r /usr/share/themes/catppuccin-mocha-pink-standard+default ~/.themes
 sudo flatpak override --filesystem=$HOME/.themes
 sudo flatpak override --filesystem=$HOME/.icons
 sudo flatpak override --env=GTK_THEME=catppuccin-mocha-pink-standard+default
