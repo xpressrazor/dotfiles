@@ -44,7 +44,7 @@ E.g.
  sudo systemctl start ly
 ```
 
-If above works then you can enable permanently, otherwise reboot and use the start script in ~/dotfiles/sway/ directory.
+If above works then you can enable permanently, otherwise reboot and use the start_sway.sh script in ~/dotfiles/sway/ directory.
 ```bash
 sudo systemctl enable ly
 ```
@@ -57,4 +57,4 @@ envycontrol -s nvidia
 envycontrol -s hybrid
 ```
 
-# If you want to replicate all the packages of current system. Go to sway directory and run the update packages script. That script will update packages from current setup in the text file. I have added code to remove yay and yay-debug from the list of packages. You can modify this file to not include some of the packages from current system too.
+# If you want to replicate all the packages of current system. Go to sway directory and run the update_installed_package_list script. That script will update packages from current setup in the text file. I have added code to remove yay and yay-debug from the list of packages. You can modify this file to not include some of the packages from current system too.
