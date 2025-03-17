@@ -34,7 +34,11 @@ Environment="XDG_CURRENT_DESKTOP=sway"
 
 `systemctl --user restart xdg-desktop-portal.service`
 
-- To enable a login manager (e.g. ly). If not, you can use .zshprofile and uncomment the auto login section. However, I prefer a login manager
+- To enable a login manager (e.g. ly). If not, you can use .zshprofile and uncomment the auto login section. However, I prefer a login manager. If you need to enable custom sway parameters, you can add it to /usr/share/wayland-sessions/sway.desktop file.
+
+E.g.
+`Exec=sway --unsupported-gpu`
+
 ```bash
  pacman -S ly
  sudo systemctl enable ly
