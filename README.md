@@ -33,3 +33,9 @@ Environment="XDG_CURRENT_DESKTOP=sway"
 - Then run following command to restart the desktop-portal
 
 `systemctl --user restart xdg-desktop-portal.service`
+
+- To enable a login manager (e.g. ly). If not, you can use .zshprofile and uncomment the auto login section. However, I prefer a login manager
+```bash
+ pacman -S ly
+ sudo systemctl enable ly
+```
