@@ -189,6 +189,8 @@ input "type:keyboard" {
 
     # Toggle workspace
     bindsym $mod+a workspace back_and_forth
+    bindsym Mod1+a workspace back_and_forth
+    bindsym Mod1+Tab workspace back_and_forth
     bindsym $mod+Shift+a move container to workspace back_and_forth
     bindsym $mod+n workspace next
     bindsym $mod+p workspace prev
@@ -246,7 +248,7 @@ bindsym $mod+r mode "resize"
     bindsym --locked XF86AudioStop exec playerctl stop
 
     # Special key to take a screenshot with grim
-    bindsym Print exec grim
+    bindsym Print exec sway-interactive-screenshot
 
 #
 # Status Bar:
@@ -303,6 +305,7 @@ bindsym $mod+Shift+n exec swaync-client -t -sw
 
 exec --no-startup-id /usr/lib/pam_kwallet_init
 exec --no-startup-id /usr/bin/nm-applet --indicator
+exec --no-startup-id /usr/bin/blueman-applet 
 exec --no-startup-id wlsunset -S 6:00 -s 18:00 -t 4000 -d 1800
 
 # Clipboard manager clipman
