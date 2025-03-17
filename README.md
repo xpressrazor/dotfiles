@@ -1,16 +1,24 @@
 # dotfiles
 My dotfiles
 
-Packages:
-yay -S ripgrep hyprland hyprlock hyprpaper hypridle waybar stow kitty  network-manager-applet waypaper wofi dolphin alacritty tmux git zsh fzf
+# Get this repository and setup sway
 
-Download Individually
-- Tmuxifier
-https://github.com/jimeh/tmuxifier
+```bash
+git clone https://github.com/xpressrazor/dotfiles.git ~/dotfiles
+cd ~/dotfiles/sway/
+chmod +x ./setup.sh
+./setup.sh
+```
 
-- Zsh
-sudo chsh -s "$(command -v zsh)" "${USER}"
+# Flatpak apps cursor not showing properly
+`systemctl --user edit xdg-desktop-portal.service`
 
-- Fuzzy Finder (Zsh Setup)
-# Set up fzf key bindings and fuzzy completion
-source <(fzf --zsh)
+# Add following lines (towards the top)
+```bash
+[Service]
+Environment="XDG_CURRENT_DESKTOP=sway"
+```
+
+- Then run following command to restart the desktop-portal
+
+`systemctl --user restart xdg-desktop-portal.service`
