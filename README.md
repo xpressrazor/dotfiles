@@ -41,7 +41,12 @@ E.g.
 
 ```bash
  pacman -S ly
- sudo systemctl enable ly
+ sudo systemctl start ly
+```
+
+If above works then you can enable permanently, otherwise reboot and use the start script in ~/dotfiles/sway/ directory.
+```bash
+sudo systemctl enable ly
 ```
 
 # For nvidia
