@@ -1,6 +1,8 @@
 #!/bin/sh
 
 ## Install packages
+
+sudo pacman -S flatpak
 ## Packages generated with pacman -Qqe > mypackages.txt
 ## Remove yay and yay-debug
 cat ./mypackages.txt | xargs yay -S --needed
