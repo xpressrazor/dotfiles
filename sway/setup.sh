@@ -30,7 +30,7 @@ sudo flatpak override --env=XCURSOR_PATH=$HOME/.icons
 sudo flatpak override --env=XCURSOR_THEME=catppuccin-mocha-flamingo-cursors
 
 cd ~/dotfiles
-stow kitty nvim swaylock waybar okular sway tmux wofi
+stow kitty nvim swaylock waybar okular sway tmux wofi pipewire
 
 # Clean up the scripts copied from sway to home folder
 cd ~
