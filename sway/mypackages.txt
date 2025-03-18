@@ -24,6 +24,7 @@ libc++
 linux
 linux-firmware
 linux-headers
+ly
 mailcap
 mpv
 neovim
