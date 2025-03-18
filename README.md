@@ -58,3 +58,15 @@ envycontrol -s hybrid
 ```
 
 # If you want to replicate all the packages of current system. Go to sway directory and run the update_installed_package_list script. That script will update packages from current setup in the text file. I have added code to remove yay and yay-debug from the list of packages. You can modify this file to not include some of the packages from current system too.
+
+# Pipewire: Sound does not automatically switch when connecting a new device
+To automatically switch to newly connected devices, create this file:
+```bash
+/etc/pipewire/pipewire-pulse.conf.d/switch-on-connect.conf (or ~/.config/pipewire/pipewire-pulse.conf.d/switch-on-connect.conf)
+pulse.cmd = [
+    { cmd = "load-module" args = "module-switch-on-connect" }
+]
+```
+Then restart the `pipewire-pulse.service` with systemctl --user and check that module-switch-on-connect is loaded.
+
+

@@ -1,0 +1,15 @@
+/* Rofi config file */
+configuration {
+    font: "JetBrains Mono Nerd Font 12";
+    show-icons: true;
+    display-window: "Window";
+    display-drun: "Search";
+    modi: "window,drun";
+    width: 30%;
+}
+
+@theme "rosepine"
+
+listview {
+    lines: 12;
+}

@@ -261,7 +261,7 @@ default_border none
 titlebar_padding 1
 titlebar_border_thickness 0
 default_floating_border none
-font pango:Any_font_name 0.001
+font pango:JetBrains Mono Nerd Font 0.001
 
 set $system_theme 'catppuccin-mocha-pink-standard+default'
 set $system_icons 'ePapirus'
