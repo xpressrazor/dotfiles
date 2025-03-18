@@ -51,11 +51,12 @@ output eDP-1 bg ~/.config/sway/background/wallhaven-3lv3q6.jpg fill
 # your displays after another 300 seconds, and turn your screens back on when
 # resumed. It will also lock your screen before your computer goes to sleep.
 
-exec swayidle -w \
-  timeout 600 'swaylock; swaymsg "output * power off"' \
-  before-sleep 'playerctl pause; swaylock; swaymsg "output * power off"' \
-  unlock 'swaymsg "output * power on"' \
-  after-resume 'swaymsg "output * power on"'
+#exec swayidle -w \
+#  timeout 600 'swaylock; swaymsg "output * power off"' \
+#  before-sleep 'playerctl pause; swaylock; swaymsg "output * power off"' \
+#  unlock 'swaymsg "output * power on"' \
+#  after-resume 'swaymsg "output * power on"'
+
 
 ### Input configuration
 #
