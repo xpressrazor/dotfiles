@@ -3,14 +3,14 @@
 ## Install packages
 ### Install git before this with pacman -S git and get this repo with git pull https://github.com/xpressrazor/dotfiles ~/dotfiles
 
-sudo pacman -Syu
-sudo pacman -S --needed flatpak zsh base-devel
+sudo pacman -Syu --noconfirm
+sudo pacman -S --needed --noconfirm flatpak zsh base-devel stow
 
 # Install yay
 cd /tmp
 git clone https://aur.archlinux.org/yay.git
 cd yay
-makepkg -si
+makepkg -si --noconfirm
 
 # Settings for yay so that it does not ask for confirmation
 yay --save --answerclean All --answerdiff All
@@ -20,7 +20,11 @@ yay --save --nocleanmenu --nodiffmenu
 ## Remove yay and yay-debug
 cat ./mypackages.txt | xargs yay -S --needed --noconfirm
 
-chsh -s /bin/zsh
+# Switch to zsh if not zsh
+if [[ $SHELL != *"zsh"* ]]; then
+  chsh -s /bin/zsh
+fi
+
 
 # Theme and cursor for flatpak
 # Install nececssary icon, cursor and gtk theme first
