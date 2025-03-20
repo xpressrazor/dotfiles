@@ -1,6 +1,7 @@
 #!/bin/sh
 
 ## Install packages
+
 ### Install git before this with pacman -S git and get this repo with git pull https://github.com/xpressrazor/dotfiles ~/dotfiles
 
 sudo pacman -Syu --noconfirm
@@ -8,10 +9,11 @@ sudo pacman -S --needed --noconfirm flatpak zsh base-devel stow
 
 # Install yay
 # Don't uncomment here, messes up environment
-#cd /tmp
-#git clone https://aur.archlinux.org/yay.git
-#cd yay
-#makepkg -si --noconfirm
+git clone https://aur.archlinux.org/yay.git
+cd yay
+makepkg -si --noconfirm
+cd ..
+rm -rf yay
 
 # Settings for yay so that it does not ask for confirmation
 yay --save --answerclean All --answerdiff All
