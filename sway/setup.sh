@@ -39,3 +39,5 @@ rm mypackages.txt setup.sh start_sway.sh update_installed_package_list.sh
 # Flatpak
 
 cat ./myflatpakpackages.txt| xargs flatpak --system -y --noninteractive install
+
+echo "\n\nInstallation done. Now logout and look how to start sway. If everything looks good, you can add the startup from zsh, otherwise use login manager like ly. \n\nDepending on the system, you may need to start sway with --unsupported-gpu"
