@@ -1,6 +1,7 @@
 #!/bin/sh
 
 ## Install packages
+### Install git before this with pacman -S git and get this repo with git pull https://github.com/xpressrazor/dotfiles ~/dotfiles
 
 sudo pacman -Syu
 sudo pacman -S --needed flatpak zsh base-devel
