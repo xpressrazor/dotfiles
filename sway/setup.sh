@@ -7,10 +7,11 @@ sudo pacman -Syu --noconfirm
 sudo pacman -S --needed --noconfirm flatpak zsh base-devel stow
 
 # Install yay
-cd /tmp
-git clone https://aur.archlinux.org/yay.git
-cd yay
-makepkg -si --noconfirm
+# Don't uncomment here, messes up environment
+#cd /tmp
+#git clone https://aur.archlinux.org/yay.git
+#cd yay
+#makepkg -si --noconfirm
 
 # Settings for yay so that it does not ask for confirmation
 yay --save --answerclean All --answerdiff All
