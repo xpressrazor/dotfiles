@@ -35,3 +35,7 @@ stow kitty nvim swaylock waybar okular sway tmux wofi pipewire
 # Clean up the scripts copied from sway to home folder
 cd ~
 rm mypackages.txt setup.sh start_sway.sh update_installed_package_list.sh
+
+# Flatpak
+
+cat ./myflatpakpackages.txt| xargs flatpak --system -y --noninteractive install

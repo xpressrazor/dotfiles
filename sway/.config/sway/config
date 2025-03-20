@@ -312,6 +312,7 @@ exec wl-paste --type image --watch cliphist store # Stores only image data
 
 
 bindsym $mod+f exec flatpak run one.ablaze.floorp
+bindsym $mod+c exec flatpak run com.google.Chrome
 bindsym $mod+e exec pcmanfm-qt
 
 set $lock_bg ~/.config/sway/background/animelock.jpg

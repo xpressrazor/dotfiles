@@ -51,6 +51,7 @@ swayidle
 swaylock
 swaync
 tlp
+tree
 ttf-0xproto-nerd
 ttf-jetbrains-mono-nerd
 ttf-roboto-mono
@@ -63,6 +64,7 @@ vulkan-intel
 vulkan-mesa-layers
 vulkan-tools
 waybar
+wget
 wlsunset
 wofi
 xdg-desktop-portal-gtk
