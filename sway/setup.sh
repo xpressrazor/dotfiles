@@ -3,9 +3,11 @@
 ## Install packages
 
 sudo pacman -Syu
-sudo pacman -S --needed flatpak
+sudo pacman -S --needed flatpak zsh base-devel
+
 yay --save --answerclean All --answerdiff All
 yay --save --nocleanmenu --nodiffmenu
+
 ## Packages generated with pacman -Qqe > mypackages.txt
 ## Remove yay and yay-debug
 cat ./mypackages.txt | xargs yay -S --needed --noconfirm
