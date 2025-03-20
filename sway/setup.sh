@@ -6,6 +6,13 @@
 sudo pacman -Syu
 sudo pacman -S --needed flatpak zsh base-devel
 
+# Install yay
+cd /tmp
+git clone https://aur.archlinux.org/yay.git
+cd yay
+makepkg -si
+
+# Settings for yay so that it does not ask for confirmation
 yay --save --answerclean All --answerdiff All
 yay --save --nocleanmenu --nodiffmenu
 
