@@ -68,12 +68,18 @@ systemctl start NetworkManager
 
 # Create user
 ```sh
-pacman -S sudo nvim
+pacman -S sudo neovim
 useradd -m -g users -G wheel,storage,power -s /bin/bash someusername
 passwd someusername
 EDITOR=nvim visudo
 ```
 Uncomment %wheel ALL=(ALL) ALL
+
+# Enable multilib in /etc/pacman.conf
+# Change permission of /home/username (if you reused /home/username)
+```
+sudo chown -R userid:groupid /home/username
+```
 
 # Install rest of the packages
 E.g. plasma-desktop firefox steam ttf-fira-code ttf-fira-mono ttf-fira-sans ttf-droid ttf-dejavu ttf-bitstream-vera ttf-ubuntu-font-family unarchiver unrar vkd3d xf86-video-amdgpu libc++
