@@ -77,3 +77,10 @@ Uncomment %wheel ALL=(ALL) ALL
 
 # Install rest of the packages
 E.g. plasma-desktop firefox steam ttf-fira-code ttf-fira-mono ttf-fira-sans ttf-droid ttf-dejavu ttf-bitstream-vera ttf-ubuntu-font-family unarchiver unrar vkd3d xf86-video-amdgpu libc++
+
+# Install login manager
+Like sddm
+
+You can start sddm with `systemctl start sddm`. If everything looks good, enable it using `systemctl enable sddm`
+
+# If you have nvidia card, install envycontrol and switch to hybrid to generate the configuration.
