@@ -32,7 +32,7 @@ mount /dev/nvmen1p1 /mnt/boot/efi
 
 ## Install base
 ```sh
-pacstrap /mnt base base-devel linux linux-firmware linux-headers networkmanager
+pacstrap /mnt base base-devel linux linux-firmware linux-headers networkmanager git
 ```
 
 # Chroot
