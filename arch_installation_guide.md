@@ -75,9 +75,9 @@ EDITOR=nvim visudo
 ```
 Uncomment %wheel ALL=(ALL) ALL
 
-# Enable multilib in /etc/pacman.conf
+# Enable multilib in /etc/pacman.conf and run pacman -Syu
 # Change permission of /home/username (if you reused /home/username)
-```
+```sh
 sudo chown -R userid:groupid /home/username
 ```
 
