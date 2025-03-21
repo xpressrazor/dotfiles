@@ -304,6 +304,7 @@ exec --no-startup-id /usr/lib/pam_kwallet_init
 exec --no-startup-id /usr/bin/nm-applet --indicator
 exec --no-startup-id /usr/bin/blueman-applet 
 exec --no-startup-id wlsunset -S 6:00 -s 18:00 -t 4000 -d 1800
+exec_always autotiling
 
 # Clipboard manager clipman
 #exec wl-paste -t text --watch clipman store --no-persist
