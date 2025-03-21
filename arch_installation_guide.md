@@ -41,6 +41,8 @@ genfstab -U /mnt >> /mnt/etc/fstab
 arch-chroot /mnt
 ```
 
+Note: Edit /etc/locale.gen and uncomment en_US.UTF-8 UTF-8 and run locale-gen
+
 # Initialize
 ```sh
 ln -sf /usr/share/zoneinfo/America/Denver /etc/localtime
