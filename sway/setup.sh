@@ -7,6 +7,12 @@
 sudo pacman -Syu --noconfirm
 sudo pacman -S --needed --noconfirm flatpak zsh base-devel stow
 
+# Switch to zsh if not zsh
+if [[ $SHELL != *"zsh"* ]]; then
+  chsh -s /bin/zsh
+fi
+
+
 # Install yay
 # Don't uncomment here, messes up environment
 git clone https://aur.archlinux.org/yay.git
@@ -22,12 +28,6 @@ yay --save --nocleanmenu --nodiffmenu
 ## Packages generated with pacman -Qqe > mypackages.txt
 ## Remove yay and yay-debug
 cat ./mypackages.txt | xargs yay -S --needed --noconfirm
-
-# Switch to zsh if not zsh
-if [[ $SHELL != *"zsh"* ]]; then
-  chsh -s /bin/zsh
-fi
-
 
 # Theme and cursor for flatpak
 # Install nececssary icon, cursor and gtk theme first
@@ -57,4 +57,4 @@ rm mypackages.txt setup.sh start_sway.sh update_installed_package_list.sh
 
 cat ./myflatpakpackages.txt| xargs flatpak --system -y --noninteractive install
 
-echo "\n\nInstallation done. Now logout and look how to start sway. If everything looks good, you can add the startup from zsh, otherwise use login manager like ly. \n\nDepending on the system, you may need to start sway with --unsupported-gpu"
+echo "\n\nInstallation done\n\n. Now logout and look how to start sway. If everything looks good, you can add the startup from zsh, otherwise use login manager like ly. \n\nDepending on the system, you may need to start sway with --unsupported-gpu"
