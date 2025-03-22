@@ -6,7 +6,6 @@ com.github.flxzt.rnote
 com.github.tchx84.Flatseal
 com.github.tchx84.Flatseal
 com.github.xournalpp.xournalpp
-com.github.zocker_160.SyncThingy
 com.google.Chrome
 com.google.Chrome
 com.rafaelmardojai.Blanket

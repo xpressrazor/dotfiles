@@ -41,6 +41,8 @@ cp -r /usr/share/themes/catppuccin-mocha-pink-standard+default ~/.themes
 sudo flatpak override --filesystem=$HOME/.themes
 sudo flatpak override --filesystem=$HOME/.icons
 sudo flatpak override --env=GTK_THEME=catppuccin-mocha-pink-standard+default
+flatpak override --user --filesystem=xdg-config/gtk-4.0
+sudo flatpak override --filesystem=xdg-config/gtk-4.0
 
 sudo flatpak override --env=ICON_THEME=Papirus-Dark
 sudo flatpak override --env=XCURSOR_PATH=$HOME/.icons

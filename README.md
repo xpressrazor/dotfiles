@@ -30,6 +30,25 @@ chmod +x ./setup.sh
 Environment="XDG_CURRENT_DESKTOP=sway"
 ```
 
+Also remember to configure gtk-3.0 and gtk-4.0 configuration
+~/.config/gtk3.0/settings.ini (parts)
+```sh
+gtk-theme-name=catppuccin-mocha-pink-standard+default
+gtk-icon-theme-name=Papirus-Dark
+gtk-font-name=Noto Sans,  10
+gtk-cursor-theme-name=catppuccin-mocha-flamingo-cursors
+gtk-cursor-theme-size=24
+```
+
+~/.config/gtk-4.0/settings.ini (parts)
+```sh
+gtk-application-prefer-dark-theme=true
+gtk-cursor-theme-name=catppuccin-mocha-flamingo-cursors
+gtk-cursor-theme-size=24
+gtk-theme-name=catppuccin-mocha-flamingo-standard+default
+gtk-icon-theme-name=Papirus-Dark
+```
+
 - Then run following command to restart the desktop-portal
 
 `systemctl --user restart xdg-desktop-portal.service`
