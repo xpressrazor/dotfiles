@@ -5,7 +5,7 @@
 ### Install git before this with pacman -S git and get this repo with git pull https://github.com/xpressrazor/dotfiles ~/dotfiles
 
 sudo pacman -Syu --noconfirm
-sudo pacman -S --needed --noconfirm flatpak zsh base-devel stow
+sudo pacman -S --needed --noconfirm flatpak zsh base-devel stow otf-font-awesome
 
 # Switch to zsh if not zsh
 if [[ $SHELL != *"zsh"* ]]; then
@@ -47,7 +47,7 @@ sudo flatpak override --env=XCURSOR_PATH=$HOME/.icons
 sudo flatpak override --env=XCURSOR_THEME=catppuccin-mocha-flamingo-cursors
 
 cd ~/dotfiles
-stow kitty nvim swaylock waybar okular sway tmux wofi pipewire
+stow kitty neovim swaylock waybar okular sway tmux wofi pipewire
 
 # Clean up the scripts copied from sway to home folder
 cd ~
