@@ -9,8 +9,8 @@ smart_gaps on
 
 ### Variables
 #
-# Logo key. Use Mod1 for Alt.
-set $mod Mod4
+# Logo key. Use Mod1 for Alt. Mod4 for Super
+set $mod Mod1
 # Home row direction keys, like vim
 set $left h
 set $down j
@@ -186,8 +186,7 @@ input "type:keyboard" {
 
     # Toggle workspace
     bindsym $mod+a workspace back_and_forth
-    bindsym Mod1+a workspace back_and_forth
-    bindsym Mod1+Tab workspace back_and_forth
+    bindsym $mod+Tab workspace back_and_forth
     #bindsym Mod1+Tab [con_mark=_prev] focus
     bindsym $mod+Shift+a move container to workspace back_and_forth
     bindsym $mod+n workspace next
@@ -300,6 +299,19 @@ exec swaync
 
 # Toggle control center
 bindsym $mod+Shift+n exec swaync-client -t -sw
+
+# Get app id with
+# swaymsg -t get_tree
+#assign [class="google-chrome"] workspace 1
+assign [app_id="one.ablaze.floorp"] workspace 1
+assign [app_id="kitty"] workspace 2
+assign [app_id="de.haeckerfelix.Shortwave"] workspace 5
+assign [app_id="libreoffice-writer"] workspace 3
+
+# Auto start
+exec --no-startup-id flatpak run one.ablaze.floorp
+exec --no-startup-id kitty tmux new-session 'nvim'
+exec --no-startup-id flatpak run de.haeckerfelix.Shortwave 
 
 exec --no-startup-id /usr/lib/pam_kwallet_init
 exec --no-startup-id /usr/bin/nm-applet --indicator

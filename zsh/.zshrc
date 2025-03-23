@@ -31,6 +31,7 @@ alias nc='ncmpcpp'
 alias note='nvim ~/Sync/mynotes/note/note.md'
 alias todo='nvim ~/Sync/mynotes/note/todo.md'
 alias t='tmux'
+alias swaytree='swaymsg -t get_tree'
 
 ## Flatpak
 alias nomacs='flatpak run org.nomacs.ImageLounge'
@@ -70,3 +71,6 @@ alias br="pomodoro 'break'"
 export QT_QPA_PLATFORM="wayland;xcb"
 export QT_QPA_PLATFORMTHEME="qt5ct"
 export XCURSOR_PATH=/usr/share/icons:~/.icons
+
+
+#if [ "$TMUX" = "" ]; then tmux; fi

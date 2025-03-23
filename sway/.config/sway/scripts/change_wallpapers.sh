@@ -3,5 +3,5 @@
 while true
 do
       waypaper --random 
-      sleep 10m
+      sleep 15m
 done
