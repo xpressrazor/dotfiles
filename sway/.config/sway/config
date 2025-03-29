@@ -308,6 +308,9 @@ assign [app_id="kitty"] workspace 2
 assign [app_id="de.haeckerfelix.Shortwave"] workspace 5
 assign [app_id="libreoffice-writer"] workspace 3
 
+# Floating
+for_window [app_id="de.haeckerfelix.Shortwave"] floating enable
+
 # Auto start
 exec flatpak run one.ablaze.floorp
 exec --no-startup-id kitty tmux new-session 'nvim'
