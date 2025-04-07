@@ -10,7 +10,7 @@ pacman -Qqe > $FILE
 grep -v "yay*" $FILE > tmpfile && mv tmpfile $FILE
 
 # Flatpak
-flatpak list --app --columns=application > $FLATPAKFILE
+flatpak list --app --columns=application | uniq > $FLATPAKFILE
 
 # Remove 3rd party flatpak
 grep -v "com.mikeasoft.pied" $FLATPAKFILE > tmpfile && mv tmpfile $FLATPAKFILE
