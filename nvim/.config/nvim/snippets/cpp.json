@@ -1,0 +1,28 @@
+{
+  "setup": {
+    "prefix": ["cpp", "sol"],
+    "body": [
+      "#include <bits/stdc++.h>",
+      "",
+      "using namespace std;",
+      "",
+      "$1",
+      "",
+      "int main(int argc, char *argv[]) {",
+      "",
+      "",
+      "\treturn 0;",
+      "}"
+    ],
+    "description": "My standard cpp setup"
+  },
+  "class1": {
+    "prefix": ["class2"],
+    "body": [
+      "class $1 {",
+      "\t$2",
+      "};"
+    ],
+    "description": "Custom class description"
+  } 
+}
