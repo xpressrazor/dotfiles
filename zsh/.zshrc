@@ -31,6 +31,7 @@ alias nc='ncmpcpp'
 alias note='nvim ~/Sync/mynotes/note/note.md'
 alias todo='nvim ~/Sync/mynotes/note/todo.md'
 alias t='tmux'
+alias n='nnn'
 alias swaytree='swaymsg -t get_tree'
 alias read_rust='w3m "/home/dell/Documents/Study/Languages/rust programming language/index.html"'
 
