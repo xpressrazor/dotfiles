@@ -28,4 +28,4 @@ vim.keymap.set("", "<Left>", "<Nop>")
 vim.keymap.set("", "<Right>", "<Nop>")
 
 -- Compile
-vim.keymap.set("n", "<F10>", function() vim.cmd "!build.sh %" end)
+vim.keymap.set("", "<Leader>r", function() vim.cmd "!g++ % -o %:r && ./%:r" end)
