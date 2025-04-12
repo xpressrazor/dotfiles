@@ -28,4 +28,7 @@ vim.keymap.set("", "<Left>", "<Nop>")
 vim.keymap.set("", "<Right>", "<Nop>")
 
 -- Compile
-vim.keymap.set("", "<Leader>r", function() vim.cmd "!g++ % -o %:r && ./%:r" end)
+vim.keymap.set("", "<Leader>r", function() vim.cmd "!g++ % -o %:r && ./%:r" end, { desc = "Run" })
+
+-- Clear buffer
+vim.keymap.set("", "<Leader>bx", function() vim.cmd ":%d" end, { desc = "Clear" })
