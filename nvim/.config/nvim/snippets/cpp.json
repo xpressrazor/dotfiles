@@ -8,25 +8,46 @@
       "",
       "class Solution {",
       "public:",
-      "\t$1",
+      "\t$0",
       "};",
       "",
       "int main(int argc, char *argv[]) {",
       "",
       "\tSolution* sol = new Solution();",
       "",
+      "\tcout<<\"\\n\";",
       "\treturn 0;",
       "}"
     ],
     "description": "My standard cpp setup"
   },
-  "class1": {
-    "prefix": ["class2"],
+  "vi": {
+    "prefix": ["vi"],
     "body": [
-      "class $1 {",
-      "\t$2",
-      "};"
+      "vector<int>"
     ],
-    "description": "Custom class description"
-  } 
+    "description": "vector<int>"
+  },
+
+  "vvi": {
+    "prefix": ["vvi"],
+    "body": [
+      "vector<vector<int>>"
+    ],
+    "description": "vector<vector<int>>"
+  },
+  "ll": {
+    "prefix": ["ll"],
+    "body": [
+      "long long"
+    ],
+    "description": "long long"
+  },
+  "csol": {
+    "prefix": ["csol"],
+    "body": [
+      "cout << sol->$0;$1"
+    ],
+    "description": "sol->;"
+  }
 }

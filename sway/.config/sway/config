@@ -290,9 +290,14 @@ seat seat0 xcursor_theme $cursor_theme $cursor_size
 font pango:$titlebar_font $titlebar_text_size
 
 # Opacity
-set $opacity 0.90
-for_window [class=".*"] opacity $opacity
-for_window [app_id=".*"] opacity $opacity
+set $slightly_opaque 0.95
+set $opaque 1.0
+set $mostly_transparent 0.95
+for_window [class=".*"] opacity $slightly_opaque
+for_window [app_id=".*"] opacity $slightly_opaque
+for_window [app_id="org.kde.okular"] opacity $mostly_transparent
+for_window [class="Google-chrome"] opacity $opaque
+for_window [app_id="google-chrome"] opacity $opaque
 
 exec --no-startup-id /usr/lib/xdg-desktop-portal -r
 exec swaync
@@ -302,7 +307,6 @@ bindsym $mod+Shift+n exec swaync-client -t -sw
 
 # Get app id with
 # swaymsg -t get_tree
-#assign [class="google-chrome"] workspace 1
 assign [app_id="one.ablaze.floorp"] workspace 1
 assign [app_id="kitty"] workspace 2
 assign [app_id="de.haeckerfelix.Shortwave"] workspace 5
