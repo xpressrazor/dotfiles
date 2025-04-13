@@ -292,7 +292,7 @@ font pango:$titlebar_font $titlebar_text_size
 # Opacity
 set $slightly_opaque 0.95
 set $opaque 1.0
-set $mostly_transparent 0.95
+set $mostly_transparent 0.90
 for_window [class=".*"] opacity $slightly_opaque
 for_window [app_id=".*"] opacity $slightly_opaque
 for_window [app_id="org.kde.okular"] opacity $mostly_transparent

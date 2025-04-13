@@ -15,6 +15,7 @@
       "",
       "\tSolution* sol = new Solution();",
       "",
+      "",
       "\tcout<<\"\\n\";",
       "\treturn 0;",
       "}"
@@ -46,8 +47,18 @@
   "csol": {
     "prefix": ["csol"],
     "body": [
-      "cout << sol->$0;$1"
+      "cout << sol->$1;$0"
     ],
     "description": "sol->;"
+  },
+  "comment": {
+    "prefix": ["//"],
+    "body": [
+      "/*",
+      "$0",
+      "*/"
+    ],
+    "description": "//"
   }
+
 }

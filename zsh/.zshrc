@@ -34,6 +34,10 @@ alias t='tmux'
 alias n='nnn'
 alias swaytree='swaymsg -t get_tree'
 alias read_rust='w3m "/home/dell/Documents/Study/Languages/rust programming language/index.html"'
+alias editzsh='nvim ~/.zshrc'
+alias updatezsh='source ~/.zshrc'
+alias dotfiles='cd ~/dotfiles && git status'
+alias bin='cd ~/bin'
 
 ## Flatpak
 alias nomacs='flatpak run org.nomacs.ImageLounge'
