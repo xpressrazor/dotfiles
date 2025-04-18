@@ -24,3 +24,4 @@ org.kde.okular
 org.keepassxc.KeePassXC
 org.libreoffice.LibreOffice
 org.nomacs.ImageLounge
+org.qbittorrent.qBittorrent
