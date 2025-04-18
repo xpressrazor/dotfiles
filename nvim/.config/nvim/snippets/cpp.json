@@ -29,7 +29,6 @@
     ],
     "description": "vector<int>"
   },
-
   "vvi": {
     "prefix": ["vvi"],
     "body": [
@@ -37,6 +36,14 @@
     ],
     "description": "vector<vector<int>>"
   },
+  "vvidp": {
+    "prefix": ["vvidp"],
+    "body": [
+      "vector<vector<int>> dp(m+1, vector<int>(n+1));"
+    ],
+    "description": "vector<vector<int>> dp(m+1, vector<int>(n+1))"
+  },
+
   "ll": {
     "prefix": ["ll"],
     "body": [
