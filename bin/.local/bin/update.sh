@@ -1,0 +1,2 @@
+flatpak update
+yay -Syu
