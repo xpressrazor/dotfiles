@@ -1,2 +1,2 @@
 #!/bin/sh
-sleep $1 && mpv ~/Applications/alarm/alarm1.mp3
+sleep $1 && mpv --loop ~/bin/media/alarm1.mp3
