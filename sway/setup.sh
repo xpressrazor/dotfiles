@@ -49,7 +49,7 @@ sudo flatpak override --env=XCURSOR_PATH=$HOME/.icons
 sudo flatpak override --env=XCURSOR_THEME=catppuccin-mocha-flamingo-cursors
 
 cd ~/dotfiles
-stow kitty neovim swaylock waybar okular sway tmux wofi pipewire bin
+stow kitty neovim swaylock waybar okular sway tmux wofi pipewire bin zoom
 
 if [ ! -d ~/bin ]; then
   ln -s ~/.local/bin ~/bin
