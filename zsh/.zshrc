@@ -79,4 +79,4 @@ export QT_QPA_PLATFORMTHEME="qt5ct"
 export XCURSOR_PATH=/usr/share/icons:~/.icons
 
 
-#if [ "$TMUX" = "" ]; then tmux; fi
+if [ "$TMUX" = "" ]; then tmux; fi
