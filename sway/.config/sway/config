@@ -290,16 +290,19 @@ seat seat0 xcursor_theme $cursor_theme $cursor_size
 font pango:$titlebar_font $titlebar_text_size
 
 # Opacity
-set $slightly_opaque 0.95
+set $slightly_opaque 0.99
 set $opaque 1.0
 set $mostly_transparent 0.90
 for_window [class=".*"] opacity $slightly_opaque
 for_window [app_id=".*"] opacity $slightly_opaque
-for_window [app_id="org.kde.okular"] opacity $mostly_transparent
+for_window [app_id="org.kde.okular"] opacity $slightly_opaque
+for_window [app_id="one.ablaze.floorp"] opacity $slightly_opaque
+for_window [app_id="libreoffice-writer"] opacity $opaque
 for_window [class="Google-chrome"] opacity $opaque
 for_window [app_id="google-chrome"] opacity $opaque
 
 exec --no-startup-id /usr/lib/xdg-desktop-portal -r
+exec --no-startup-id /usr/lib/polkit-kde-authentication-agent-1
 exec swaync
 
 # Toggle control center
