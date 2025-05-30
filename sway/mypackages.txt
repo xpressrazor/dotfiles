@@ -17,6 +17,7 @@ epapirus-icon-theme
 ethtool
 exfatprogs
 ffmpegthumbnailer
+flatpak
 fprintd
 fzf
 git
@@ -42,7 +43,6 @@ libgsf
 linux
 linux-firmware
 linux-headers
-ly
 mailcap
 mpd
 mpv
@@ -51,17 +51,16 @@ neovim
 network-manager-applet
 networkmanager
 nmap
-nnn
 ntfs-3g
 nvidia-open
 nwg-look
 papirus-folders-catppuccin-git
 pipewire-pulse
 plocate
-polkit-kde-agent
 poppler-glib
+qt5-wayland
+qt5ct
 qt6ct
-radiotray
 ripgrep
 rofi-wayland
 rose-pine-gtk-theme
@@ -99,6 +98,7 @@ w3m
 waybar
 waypaper
 weylus
+wf-recorder
 wget
 wlsunset
 wofi
@@ -106,4 +106,3 @@ xdg-desktop-portal-gtk
 xdg-desktop-portal-wlr
 xorg-xhost
 xorg-xwayland
-zoom

@@ -1,18 +1,12 @@
-ar.xjuan.Cambalache
-com.github.flxzt.rnote
 com.github.tchx84.Flatseal
 com.github.xournalpp.xournalpp
 com.google.Chrome
-com.rafaelmardojai.Blanket
+com.obsproject.Studio
 com.saivert.pwvucontrol
 de.haeckerfelix.Shortwave
-io.github.b43NnUNF4vidFYFhpqaLWy2ANawtRbMtUXZY9Pf.jumpdf
 io.github.quodlibet.QuodLibet
 io.github.troyeguo.koodo-reader
-net.cozic.joplin_desktop
 net.davidotek.pupgui2
-net.mkiol.SpeechNote
-net.nokyan.Resources
 one.ablaze.floorp
 org.dupot.easyflatpak
 org.gimp.GIMP
@@ -25,3 +19,4 @@ org.keepassxc.KeePassXC
 org.libreoffice.LibreOffice
 org.nomacs.ImageLounge
 org.qbittorrent.qBittorrent
+us.zoom.Zoom
