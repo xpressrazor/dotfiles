@@ -8,7 +8,6 @@ catppuccin-cursors-mocha
 catppuccin-gtk-theme-mocha
 cliphist
 comicthumb
-dolphin
 english-wordnet
 envycontrol
 epapirus-icon-theme
