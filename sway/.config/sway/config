@@ -93,6 +93,7 @@ input "type:keyboard" {
 
     # Kill focused window
     bindsym $mod+q kill
+    bindsym Mod1+q kill
 
     # Start your launcher
     bindsym $mod+Space exec $menu

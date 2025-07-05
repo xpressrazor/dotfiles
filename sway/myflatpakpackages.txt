@@ -1,12 +1,12 @@
 com.github.tchx84.Flatseal
-org.dupot.easyflatpak
 com.google.Chrome
 com.saivert.pwvucontrol
 io.github.quodlibet.QuodLibet
+one.ablaze.floorp
+org.dupot.easyflatpak
 org.kde.kate
 org.kde.kdevelop
 org.kde.okular
+org.keepassxc.KeePassXC
 org.nomacs.ImageLounge
 org.qbittorrent.qBittorrent
-one.ablaze.floorp
-org.keepassxc.KeePassXC

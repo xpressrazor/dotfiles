@@ -3,3 +3,4 @@
 ## Try to limit packages that are installed by yay or pacman
 
 cat ./myflatpakpackages.txt | xargs flatpak --system -y uninstall --delete-data
+sudo pacman -Rns $(pacman -Qdtq)
