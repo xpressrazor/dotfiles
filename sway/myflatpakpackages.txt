@@ -9,3 +9,4 @@ org.kde.okular
 org.nomacs.ImageLounge
 org.qbittorrent.qBittorrent
 one.ablaze.floorp
+org.keepassxc.KeePassXC
