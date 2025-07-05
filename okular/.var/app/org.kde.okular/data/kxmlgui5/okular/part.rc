@@ -134,6 +134,7 @@
   <Action name="view_scroll_page_down" shortcut="Space; D"/>
   <Action name="first_page" shortcut="Ctrl+Home; G, G"/>
   <Action name="last_page" shortcut="Ctrl+End; Shift+G"/>
+  <Action name="show_bottombar" shortcut="Ctrl+&quot;"/>
  </ActionProperties>
  <ToolBar hidden="true" iconText="icononly" name="annotationToolBar" newline="true">
   <text>Annotation Toolbar</text>
