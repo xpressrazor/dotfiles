@@ -1,4 +1,3 @@
-alacritty
 alsa-firmware
 alsa-utils
 autotiling-git
@@ -8,9 +7,8 @@ brightnessctl
 catppuccin-cursors-mocha
 catppuccin-gtk-theme-mocha
 cliphist
-code
 comicthumb
-dictd
+dolphin
 english-wordnet
 envycontrol
 epapirus-icon-theme
@@ -44,15 +42,16 @@ linux
 linux-firmware
 linux-headers
 mailcap
-mpd
+maven
 mpv
-ncmpcpp
 neovim
 network-manager-applet
 networkmanager
 nmap
 ntfs-3g
 nvidia-open
+nvidia-prime
+nvidia-settings
 nwg-look
 papirus-folders-catppuccin-git
 pipewire-pulse
@@ -97,8 +96,6 @@ vulkan-tools
 w3m
 waybar
 waypaper
-weylus
-wf-recorder
 wget
 wlsunset
 wofi
