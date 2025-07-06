@@ -2,11 +2,13 @@ com.github.tchx84.Flatseal
 com.google.Chrome
 com.saivert.pwvucontrol
 io.github.quodlibet.QuodLibet
+net.ankiweb.Anki
 one.ablaze.floorp
 org.dupot.easyflatpak
 org.kde.kate
 org.kde.kdevelop
 org.kde.okular
 org.keepassxc.KeePassXC
+org.libreoffice.LibreOffice
 org.nomacs.ImageLounge
 org.qbittorrent.qBittorrent
