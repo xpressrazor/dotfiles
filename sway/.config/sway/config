@@ -304,6 +304,22 @@ for_window [app_id="libreoffice-writer"] opacity $opaque
 for_window [class="Google-chrome"] opacity $opaque
 for_window [app_id="google-chrome"] opacity $opaque
 
+# Floating
+for_window [app_id="de.haeckerfelix.Shortwave"] floating enable
+for_window [app_id="Zoom" title="^zoom$"] floating enable, floating_minimum_size 250 x 400
+
+
+# To specific workspace
+#for_window [app_id="one.ablaze.floorp"] move container to workspace number 1, focus
+
+bindsym $mod+Shift+f exec flatpak run one.ablaze.floorp
+bindsym $mod+f workspace number 1
+bindsym $mod+c exec flatpak run com.google.Chrome
+bindsym $mod+e exec thunar
+bindsym $mod+Shift+r exec waypaper --random
+bindsym $mod+i workspace number 2
+bindsym $mod+o workspace number 4
+bindsym $mod+Shift+o exec flatpak run com.google.Chrome
 
 # Recording (Zoom etc.)
 exec --no-startup-id systemctl --user import-environment WAYLAND_DISPLAY XDG_CURRENT_DESKTOP
@@ -323,15 +339,12 @@ bindsym $mod+Shift+n exec swaync-client -t -sw
 
 # Get app id with
 # swaymsg -t get_tree
-#assign [app_id="one.ablaze.floorp"] workspace 1
-#assign [app_id="kitty"] workspace 2
+assign [app_id="one.ablaze.floorp"] workspace 1
+assign [app_id="kitty"] workspace 2
 #assign [app_id="de.haeckerfelix.Shortwave"] workspace 5
-#assign [app_id="libreoffice-writer"] workspace 3
+assign [app_id="libreoffice-writer"] workspace 3
+assign [class="Google-chrome"] workspace 4
 
-
-# Floating
-for_window [app_id="de.haeckerfelix.Shortwave"] floating enable
-for_window [app_id="Zoom" title="^zoom$"] floating enable, floating_minimum_size 250 x 400
 
 # Auto start
 #exec --no-startup-id kitty tmux new-session 'nvim'
@@ -353,11 +366,6 @@ exec autotiling -l 2
 exec wl-paste --type text --watch cliphist store # Stores only text data
 exec wl-paste --type image --watch cliphist store # Stores only image data
 
-
-bindsym $mod+f exec flatpak run one.ablaze.floorp
-bindsym $mod+c exec flatpak run com.google.Chrome
-bindsym $mod+e exec thunar
-bindsym $mod+Shift+r exec waypaper --random
 
 set $lock_bg ~/.config/sway/background/animelock.jpg
 bindsym Ctrl+Mod1+l exec hyprlock 
