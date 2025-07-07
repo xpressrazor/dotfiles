@@ -31,7 +31,8 @@ hunspell-en_us
 hyprlock
 jdk-openjdk
 jq
-kitty-git
+kitty
+tmux
 kwallet-pam
 lib32-pipewire
 lib32-vulkan-intel
