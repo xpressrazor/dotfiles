@@ -13,6 +13,7 @@ envycontrol
 epapirus-icon-theme
 ethtool
 exfatprogs
+fastfetch
 ffmpegthumbnailer
 flatpak
 fprintd
@@ -60,7 +61,6 @@ qt5-wayland
 qt5ct
 qt6ct
 ripgrep
-rofi-wayland
 rose-pine-gtk-theme
 rpi-imager
 slimbookbattery

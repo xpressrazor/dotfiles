@@ -12,3 +12,4 @@ org.keepassxc.KeePassXC
 org.libreoffice.LibreOffice
 org.nomacs.ImageLounge
 org.qbittorrent.qBittorrent
+us.zoom.Zoom
