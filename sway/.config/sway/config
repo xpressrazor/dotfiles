@@ -4,6 +4,7 @@
 #
 # Read `man 5 sway` for a complete reference.
 
+
 gaps inner 3
 smart_gaps on
 
@@ -190,8 +191,10 @@ input "type:keyboard" {
     # Toggle workspace
     bindsym $mod+a workspace back_and_forth
     bindsym $mod+Tab workspace back_and_forth
-    #bindsym Mod1+Tab [con_mark=_prev] focus
+    bindsym Mod1+Tab workspace back_and_forth
     bindsym $mod+Shift+a move container to workspace back_and_forth
+    bindsym $mod+Shift+Tab move container to workspace back_and_forth
+    bindsym Mod1+Shift+Tab workspace back_and_forth
     bindsym $mod+n workspace next
     bindsym $mod+p workspace prev
 #
@@ -322,26 +325,24 @@ for_window [instance="google-chrome"] move container to workspace number 4, focu
 for_window [app_id="org.kde.okular"] move container to workspace number 5, focus
 for_window [app_id="thunar"] move container to workspace number 6, focus
 for_window [app_id="io.github.quodlibet.QuodLibet"] move container to workspace number 7, focus
+for_window [instance="jetbrains-idea-ce"] move container to workspace number 8, focus
 
 bindsym $mod+Shift+f exec flatpak run one.ablaze.floorp
 bindsym $mod+Shift+g exec flatpak run com.google.Chrome
+bindsym $mod+Shift+d exec flatpak run com.jetbrains.IntelliJ-IDEA-Community
+bindsym $mod+Shift+o exec flatpak run org.kde.okular
+bindsym $mod+Shift+z exec thunar
 
 bindsym $mod+f workspace number 1
 bindsym $mod+i workspace number 2
+bindsym $mod+x workspace number 3
 bindsym $mod+g workspace number 4
+bindsym $mod+o workspace number 5
+bindsym $mod+z workspace number 6
+bindsym $mod+d workspace number 8
 
 
-bindsym $mod+e exec thunar
 bindsym $mod+Shift+r exec waypaper --random
-# Recording (Zoom etc.)
-exec --no-startup-id systemctl --user import-environment WAYLAND_DISPLAY XDG_CURRENT_DESKTOP
-exec --no-startup-id dbus-update-activation-environment --systemd WAYLAND_DISPLAY XDG_CURRENT_DESKTOP=sway
-
-# Start xdg-desktop-portal services (ensure wlr starts first)
-exec --no-startup-id /usr/lib/xdg-desktop-portal-wlr &
-exec --no-startup-id /usr/lib/xdg-desktop-portal -r
-
-
 
 exec --no-startup-id /usr/lib/polkit-kde-authentication-agent-1
 exec swaync
@@ -361,6 +362,17 @@ bindsym $mod+Shift+n exec swaync-client -t -sw
 # Auto start
 #exec --no-startup-id kitty tmux new-session 'nvim'
 #exec --no-startup-id flatpak run de.haeckerfelix.Shortwave 
+
+# Recording (Zoom etc.)
+
+exec --no-startup-id systemctl --user import-environment WAYLAND_DISPLAY XDG_CURRENT_DESKTOP
+exec --no-startup-id dbus-update-activation-environment --systemd WAYLAND_DISPLAY XDG_CURRENT_DESKTOP=sway
+#exec --no-startup-id dbus-update-activation-environment --all
+
+# Start xdg-desktop-portal services (ensure wlr starts first)
+exec --no-startup-id /usr/lib/xdg-desktop-portal-wlr &
+exec --no-startup-id /usr/lib/xdg-desktop-portal -r
+
 
 exec --no-startup-id /usr/lib/pam_kwallet_init
 exec --no-startup-id /usr/bin/nm-applet --indicator
