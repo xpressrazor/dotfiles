@@ -89,3 +89,70 @@ pulse.cmd = [
 Then restart the `pipewire-pulse.service` with systemctl --user and check that module-switch-on-connect is loaded.
 
 
+
+# Sway Screen Recording
+(From my reddit post)
+
+This post started as a question, however I would like to post the solution here (edit).
+
+Background: I was trying to use zoom (OBS works same way) and share my desktop, however did not find any workable solution. I have NVidia GPU.
+
+After some research I found out that sway or the apps need to work with dbus.
+
+Solution 1:
+
+Start sway with "exec dbus-run-session sway --unsupported-gpu"
+
+Problem:
+
+Screen recording works, however apps like Chrome or Firefox miss some key features E.g. Uploading a file to any website or saving a file to your computer
+
+Solution 2: (I am leaning towards this)
+
+Start sway without the dbus-run-session command: "exec sway --unsupported-gpu"
+
+Start apps like Zoom or OBS with dbus-run-session command: "dbus-run-session flatpak run com.obsproject.Studio"
+
+Problem:
+
+You get error from commands like swaymsg: swaymsg -t get_tree
+
+00:00:00.000 [common/ipc-client.c:66] Unable to connect to /run/user/1000/sway-ipc.1000.1534.sock
+
+To solve this issue, we need to export SWAYSOCK variable to point to the above sock file before running the command. E.g.
+
+```bash
+#!/bin/bash
+
+export SWAYSOCK=$(ls /run/user/1000/sway-*)
+swaymsg -t get_tree
+
+```
+
+## Setup
+I have following environment variables in my .zshrc (I think some of these were recommended for web based screen share)
+
+```
+export XDG_CURRENT_DESKTOP=sway
+export XDG_SESSION_TYPE=wayland
+export XDG_SESSION_DESKTOP=sway
+export MOZ_ENABLE_WAYLAND=1
+export QT_QPA_PLATFORM=wayland
+export SDL_VIDEODRIVER=wayland
+export _JAVA_AWT_WM_NONREPARENTING=1
+export GTK_IM_MODULE=wayland
+export QT_IM_MODULE=wayland
+export XMODIFIERS="@im=wayland"
+
+```
+And in my sway config file, following settings
+
+```exec --no-startup-id systemctl --user import-environment WAYLAND_DISPLAY XDG_CURRENT_DESKTOP
+exec --no-startup-id dbus-update-activation-environment --systemd WAYLAND_DISPLAY XDG_CURRENT_DESKTOP=sway
+
+# Start xdg-desktop-portal services (ensure wlr starts first)
+exec --no-startup-id /usr/lib/xdg-desktop-portal-wlr
+exec --no-startup-id /usr/lib/xdg-desktop-portal -r
+```
+
+For packages I have these (not sure if all are required): pipewire, pipewire-pulse, qt5-wayland, qt5ct, qt6ct, alsa-utils and alsa-firmware

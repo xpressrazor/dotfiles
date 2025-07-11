@@ -1,9 +1,13 @@
+com.github.marhkb.Pods
 com.github.tchx84.Flatseal
 com.google.Chrome
+com.jetbrains.IntelliJ-IDEA-Community
+com.obsproject.Studio
 com.saivert.pwvucontrol
 io.github.quodlibet.QuodLibet
 net.ankiweb.Anki
 one.ablaze.floorp
+org.audacityteam.Audacity
 org.dupot.easyflatpak
 org.kde.kate
 org.kde.kdevelop
