@@ -126,8 +126,10 @@ To solve this issue, we need to export SWAYSOCK variable to point to the above s
 
 export SWAYSOCK=$(ls /run/user/1000/sway-*)
 swaymsg -t get_tree
-
 ```
+
+Note: Addding the above export line in .zshrc also seems to work.
+
 
 ## Setup
 I have following environment variables in my .zshrc (I think some of these were recommended for web based screen share)
