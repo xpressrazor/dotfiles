@@ -38,6 +38,8 @@ linux
 linux-firmware
 linux-headers
 mailcap
+man-db
+man-pages
 maven
 mpv
 neovim

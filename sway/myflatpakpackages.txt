@@ -4,6 +4,8 @@ com.google.Chrome
 com.jetbrains.IntelliJ-IDEA-Community
 com.obsproject.Studio
 com.saivert.pwvucontrol
+com.visualstudio.code
+de.haeckerfelix.Shortwave
 io.github.quodlibet.QuodLibet
 net.ankiweb.Anki
 one.ablaze.floorp
@@ -16,4 +18,5 @@ org.keepassxc.KeePassXC
 org.libreoffice.LibreOffice
 org.nomacs.ImageLounge
 org.qbittorrent.qBittorrent
+rocks.shy.VacuumTube
 us.zoom.Zoom
