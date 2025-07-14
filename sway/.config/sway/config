@@ -90,7 +90,7 @@ input "type:keyboard" {
 # Basics:
 #
     # Start a terminal
-    bindsym $mod+Return exec $term
+    bindsym $mod+Shift+Return exec $term
 
     # Kill focused window
     bindsym $mod+q kill
@@ -335,7 +335,7 @@ bindsym $mod+Shift+o exec flatpak run org.kde.okular
 bindsym $mod+Shift+z exec thunar
 
 bindsym $mod+f workspace number 1
-bindsym $mod+i workspace number 2
+bindsym $mod+Return workspace number 2
 bindsym $mod+x workspace number 3
 bindsym $mod+g workspace number 4
 bindsym $mod+o workspace number 5

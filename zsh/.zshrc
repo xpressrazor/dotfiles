@@ -91,3 +91,5 @@ export XCURSOR_PATH=/usr/share/icons:~/.icons
 
 
 if [ "$TMUX" = "" ]; then tmux; fi
+
+export SWAYSOCK=$(ls /run/user/1000/sway-*)

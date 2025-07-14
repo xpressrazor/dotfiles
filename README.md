@@ -147,7 +147,8 @@ export XMODIFIERS="@im=wayland"
 ```
 And in my sway config file, following settings
 
-```exec --no-startup-id systemctl --user import-environment WAYLAND_DISPLAY XDG_CURRENT_DESKTOP
+```
+exec --no-startup-id systemctl --user import-environment WAYLAND_DISPLAY XDG_CURRENT_DESKTOP
 exec --no-startup-id dbus-update-activation-environment --systemd WAYLAND_DISPLAY XDG_CURRENT_DESKTOP=sway
 
 # Start xdg-desktop-portal services (ensure wlr starts first)
