@@ -1,10 +1,10 @@
+app.polychromatic.controller
 com.github.marhkb.Pods
 com.github.tchx84.Flatseal
 com.google.Chrome
 com.jetbrains.IntelliJ-IDEA-Community
 com.obsproject.Studio
 com.saivert.pwvucontrol
-com.visualstudio.code
 de.haeckerfelix.Shortwave
 io.github.quodlibet.QuodLibet
 net.ankiweb.Anki
@@ -17,6 +17,7 @@ org.kde.okular
 org.keepassxc.KeePassXC
 org.libreoffice.LibreOffice
 org.nomacs.ImageLounge
+org.openrgb.OpenRGB
 org.qbittorrent.qBittorrent
 rocks.shy.VacuumTube
 us.zoom.Zoom

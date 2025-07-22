@@ -1,3 +1,4 @@
+alacritty
 alsa-firmware
 alsa-utils
 autotiling-git
@@ -9,11 +10,13 @@ catppuccin-gtk-theme-mocha
 cliphist
 comicthumb
 docker
+dragon-drop
 english-wordnet
 envycontrol
 ethtool
 fastfetch
 ffmpegthumbnailer
+firefox
 flatpak
 fprintd
 fzf
@@ -27,6 +30,7 @@ gvfs
 htop
 hunspell-en_us
 hyprlock
+icu69-bin
 jdk-openjdk
 jq
 kitty-git
@@ -41,7 +45,9 @@ mailcap
 man-db
 man-pages
 maven
+mpd
 mpv
+ncmpcpp
 neovim
 network-manager-applet
 networkmanager
@@ -51,6 +57,7 @@ nvidia-open
 nvidia-prime
 nvidia-settings
 nwg-look
+openrazer-daemon
 papirus-folders-catppuccin-git
 plocate
 qt5ct
@@ -85,6 +92,7 @@ unarchiver
 virtualbox
 virtualbox-guest-iso
 virtualbox-host-modules-arch
+visual-studio-code-bin
 vkd3d
 vulkan-intel
 vulkan-mesa-layers
