@@ -1,13 +1,16 @@
 app.polychromatic.controller
 com.github.marhkb.Pods
 com.github.tchx84.Flatseal
+com.github.wwmm.easyeffects
 com.google.Chrome
 com.jetbrains.IntelliJ-IDEA-Community
 com.obsproject.Studio
 com.saivert.pwvucontrol
 de.haeckerfelix.Shortwave
 io.github.quodlibet.QuodLibet
+md.obsidian.Obsidian
 net.ankiweb.Anki
+net.cozic.joplin_desktop
 one.ablaze.floorp
 org.audacityteam.Audacity
 org.dupot.easyflatpak

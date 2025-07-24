@@ -16,6 +16,8 @@ envycontrol
 ethtool
 fastfetch
 ffmpegthumbnailer
+ffmpegthumbs
+filelight
 firefox
 flatpak
 fprintd
@@ -33,8 +35,12 @@ hyprlock
 icu69-bin
 jdk-openjdk
 jq
+kdegraphics-thumbnailers
+kdenetwork-filesharing
+kio-admin
 kitty-git
-kwallet-pam
+kompare
+konsole
 lib32-pipewire
 lib32-vulkan-intel
 libc++
