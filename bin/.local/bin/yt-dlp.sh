@@ -1,0 +1,1 @@
+/home/dell/Applications/yt-dlp/yt-dlp.sh
