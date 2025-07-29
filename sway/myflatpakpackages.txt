@@ -1,12 +1,13 @@
 app.polychromatic.controller
 com.github.marhkb.Pods
 com.github.tchx84.Flatseal
-com.github.wwmm.easyeffects
 com.google.Chrome
 com.jetbrains.IntelliJ-IDEA-Community
 com.obsproject.Studio
 com.saivert.pwvucontrol
+com.visualstudio.code
 de.haeckerfelix.Shortwave
+io.github.aandrew_me.ytdn
 io.github.quodlibet.QuodLibet
 md.obsidian.Obsidian
 net.ankiweb.Anki
@@ -14,6 +15,7 @@ net.cozic.joplin_desktop
 one.ablaze.floorp
 org.audacityteam.Audacity
 org.dupot.easyflatpak
+org.kde.audiotube
 org.kde.kate
 org.kde.kdevelop
 org.kde.okular
