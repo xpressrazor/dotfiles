@@ -1,15 +1,36 @@
 /* Rofi config file */
 configuration {
-    font: "JetBrains Mono Nerd Font 12";
+    font: "Monofur Nerd Font 20";
     show-icons: true;
     display-window: "Window";
     display-drun: "Search";
     modi: "window,drun";
-    width: 30%;
+    width: 20%;
 }
 
-@theme "rosepine"
+@theme "rosepine" 
 
 listview {
     lines: 12;
+}
+
+element {
+    orientation: horizontal;
+    children: [element-icon, element-text];
+    spacing: 5px;
+}
+
+element-icon {
+    size: 0.6em;
+}
+
+* {
+    margin: 0px;
+    font: "Cartograph CF 16";
+    width: 25%;
+    background-color: #191724;
+    border-radius: 0px;
+    border: 0px solid;
+    border-color: #eb6f92;
+    color: #e0def4;
 }

@@ -1,5 +1,4 @@
 app.polychromatic.controller
-com.github.marhkb.Pods
 com.github.tchx84.Flatseal
 com.google.Chrome
 com.jetbrains.IntelliJ-IDEA-Community
@@ -11,18 +10,15 @@ io.github.aandrew_me.ytdn
 io.github.quodlibet.QuodLibet
 md.obsidian.Obsidian
 net.ankiweb.Anki
-net.cozic.joplin_desktop
 one.ablaze.floorp
 org.audacityteam.Audacity
 org.dupot.easyflatpak
+org.gnome.meld
 org.kde.audiotube
 org.kde.kate
-org.kde.kdevelop
 org.kde.okular
 org.keepassxc.KeePassXC
 org.libreoffice.LibreOffice
 org.nomacs.ImageLounge
-org.openrgb.OpenRGB
 org.qbittorrent.qBittorrent
-rocks.shy.VacuumTube
 us.zoom.Zoom

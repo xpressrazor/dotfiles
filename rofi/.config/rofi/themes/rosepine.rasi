@@ -15,9 +15,9 @@
 	font: "Cartograph CF 12";
 
 	foreground: @fgd;
-	background: @bg;
-	active-background: @grn;
-	urgent-background: @red;
+background: @bg;
+	active-background: @red;
+	urgent-background: @grn;
 
 	selected-background: @active-background;
 	selected-urgent-background: @urgent-background;

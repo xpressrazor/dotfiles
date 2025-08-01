@@ -47,12 +47,13 @@ nvidia-open
 nvidia-prime
 nvidia-settings
 nwg-look
+os-prober
 papirus-folders-catppuccin-git
 pipewire-pulse
 plocate
 qt5ct
 qt6ct
-rose-pine-gtk-theme
+rose-pine-gtk-theme-full
 rpi-imager
 slimbookbattery
 sof-firmware

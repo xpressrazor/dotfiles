@@ -335,6 +335,7 @@ bindsym $mod+Shift+g exec flatpak run com.google.Chrome
 bindsym $mod+Shift+d exec flatpak run com.jetbrains.IntelliJ-IDEA-Community
 bindsym $mod+Shift+o exec flatpak run org.kde.okular
 bindsym $mod+Shift+z exec thunar
+bindsym $mod+Shift+q exec flatpak run io.github.quodlibet.QuodLibet --toggle-window
 
 bindsym $mod+f workspace number 1
 bindsym $mod+Return workspace number 2
