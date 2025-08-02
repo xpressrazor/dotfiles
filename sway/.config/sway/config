@@ -316,6 +316,7 @@ for_window [app_id="google-chrome"] opacity $opaque
 
 # Floating
 for_window [app_id="de.haeckerfelix.Shortwave"] floating enable, move container to workspace 7, focus
+for_window [app_id="com.saivert.pwvucontrol"] floating enable
 for_window [app_id="Zoom" title="^zoom$"] floating enable, floating_minimum_size 250 x 400
 
 
