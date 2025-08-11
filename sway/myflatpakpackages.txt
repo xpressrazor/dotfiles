@@ -7,12 +7,12 @@ com.saivert.pwvucontrol
 com.visualstudio.code
 de.haeckerfelix.Shortwave
 io.github.aandrew_me.ytdn
+io.github.flattool.Warehouse
+io.github.quodlibet.ExFalso
 io.github.quodlibet.QuodLibet
 md.obsidian.Obsidian
-net.ankiweb.Anki
 one.ablaze.floorp
 org.audacityteam.Audacity
-org.dupot.easyflatpak
 org.gnome.meld
 org.kde.audiotube
 org.kde.kate
