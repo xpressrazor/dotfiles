@@ -1,0 +1,6 @@
+{
+    "device": "alsa_output.usb-FiiO_K3-00.analog-stereo",
+    "device-description": "K3 Analog Stereo",
+    "device-profile": "analog-output",
+    "preset-name": "Shure"
+}
