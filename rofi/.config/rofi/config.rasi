@@ -22,6 +22,18 @@ element {
 
 element-icon {
     size: 0.6em;
+    expand: false;
+}
+
+element-text {
+    expand: true;  // Allows text to take up remaining space
+    horizontal-align: 0.0;   // Align text to the left
+    vertical-align: 0.5;  // Center text vertically
+}
+
+// Hide other elements
+element-match {
+    enabled: false;
 }
 
 * {

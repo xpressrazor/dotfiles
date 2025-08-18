@@ -1,9 +1,11 @@
+alacritty
 alsa-firmware
 alsa-utils
 autotiling-git
 base
 blueman
 brightnessctl
+calf
 catppuccin-cursors-mocha
 catppuccin-gtk-theme-mocha
 cliphist
@@ -37,6 +39,8 @@ kwallet-pam
 lib32-pipewire
 lib32-vulkan-intel
 libc++
+libjpeg6-turbo
+libkeybinder3
 linux
 linux-firmware
 linux-headers
@@ -60,8 +64,11 @@ os-prober
 papirus-folders-catppuccin-git
 pipewire-pulse
 plocate
+python-pyinotify
+python-pysocks
 qt5ct
 qt6ct
+quodlibet
 rose-pine-gtk-theme-full
 rpi-imager
 slimbookbattery

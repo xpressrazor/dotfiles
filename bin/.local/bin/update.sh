@@ -1,2 +1,2 @@
-flatpak update
 yay -Syu
+flatpak update --noninteractive

@@ -27,7 +27,7 @@
         "battery#bat2",
         "clock",
         "tray",
-        "custom/power"
+        "custom/power",
     ],
     // Modules configuration
      "sway/workspaces": {
