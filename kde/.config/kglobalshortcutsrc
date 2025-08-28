@@ -1,8 +1,8 @@
 [ActivityManager]
 _k_friendly_name=Activity Manager
-switch-to-activity-5d1483d4-2e5d-40d1-8614-a9f59a20136d=Meta+Shift+C,none,Switch to activity "Coding"
-switch-to-activity-6e2bdc48-92d7-4294-877e-1ec88dc4a4ed=Meta+Shift+Z,none,Switch to activity "Study"
-switch-to-activity-7d15e033-baaa-42cb-883d-a23b8be4607d=Meta+Shift+X,none,Switch to activity "Music"
+switch-to-activity-5d1483d4-2e5d-40d1-8614-a9f59a20136d=Meta+Shift+C,none,Switch to activity ""
+switch-to-activity-6e2bdc48-92d7-4294-877e-1ec88dc4a4ed=Meta+Shift+Z,none,Switch to activity ""
+switch-to-activity-7d15e033-baaa-42cb-883d-a23b8be4607d=Meta+Shift+X,none,Switch to activity ""
 
 [KDE Keyboard Layout Switcher]
 Switch to Last-Used Keyboard Layout=Meta+Alt+L,Meta+Alt+L,Switch to Last-Used Keyboard Layout
@@ -238,6 +238,7 @@ activate task manager entry 8=Meta+8,Meta+8,Activate Task Manager Entry 8
 activate task manager entry 9=Meta+9,Meta+9,Activate Task Manager Entry 9
 activate widget 26=none,none,Activate Application Dashboard Widget
 activate widget 30=none,none,Activate Activity Bar Widget
+activate widget 36=,none,Activate Application Dashboard Widget
 clear-history=none,,Clear Clipboard History
 clipboard_action=Meta+Ctrl+X,Meta+Ctrl+X,Automatic Action Popup Menu
 cycle-panels=Meta+Alt+P,Meta+Alt+P,Move keyboard focus between panels
@@ -259,8 +260,11 @@ toggle do not disturb=none,,Toggle do not disturb
 [services][kitty.desktop]
 _launch=Meta+Return
 
+[services][net.local.wofi-2.desktop]
+_launch=Meta+Space
+
 [services][org.kde.krunner.desktop]
-_launch=Meta+Space\tAlt+F2\tAlt+Space\tSearch
+_launch=Alt+F2\tSearch\tAlt+Space
 
 [services][org.kde.touchpadshortcuts.desktop]
 ToggleTouchpad=Touchpad Toggle\tMeta+Ctrl+Zenkaku Hankaku

@@ -2,7 +2,7 @@
 <interface>
   <object class="GtkMenu" id="menu">
     <child>
-      <object class="GtkMenuItem" id="exit">
+      <object class="GtkMenuItem" id="swayexit">
 			<property name="label">Exit</property>
         </object>
 	  </child>

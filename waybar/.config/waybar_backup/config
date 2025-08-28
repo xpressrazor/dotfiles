@@ -8,13 +8,13 @@
     // Choose the order of the modules
     "modules-left": [
         "custom/app",
-        "sway/workspaces",
-        "sway/mode",
-        "sway/scratchpad",
+        "hyprland/workspaces",
+        "hyprland/mode",
+        "hyprland/scratchpad",
         "custom/media"
     ],
     "modules-center": [
-        "sway/window"
+        "hyprland/window"
     ],
     "modules-right": [
         "pulseaudio",
@@ -30,7 +30,7 @@
         "custom/power",
     ],
     // Modules configuration
-     "sway/workspaces": {
+     "hyprland/workspaces": {
          "disable-scroll": false,
          "all-outputs": true,
          "persistent-workspaces" : {
@@ -64,13 +64,13 @@
             "unlocked": ""
         }
     },
-    "sway/window" : {
+    "hyprland/window" : {
         "max-length" : 50,
     },
-    "sway/mode": {
+    "hyprland/mode": {
         "format": "<span style=\"italic\">{}</span>"
     },
-    "sway/scratchpad": {
+    "hyprland/scratchpad": {
         "format": "{icon} {count}",
         "show-empty": false,
         "format-icons": ["", ""],
@@ -218,7 +218,8 @@
             "car": "",
             "default": ["", "", ""]
         },
-        "on-click": "flatpak run com.saivert.pwvucontrol"
+        //"on-click": "flatpak run com.saivert.pwvucontrol"
+        "on-click": "pavucontrol"
     },
     "custom/media": {
         "format": "{icon} {text}",

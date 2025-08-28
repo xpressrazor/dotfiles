@@ -20,7 +20,7 @@ set $right l
 # Your preferred terminal emulator
 set $term kitty
 # Your preferred application launcher
-set $menu wofi --show drun
+set $menu wofi --show drun -noanim
 #set $menu rofi -show drun
 
 ### Output configuration
@@ -317,6 +317,7 @@ for_window [app_id="google-chrome"] opacity $opaque
 # Floating
 for_window [app_id="de.haeckerfelix.Shortwave"] floating enable, move container to workspace 7, focus
 for_window [app_id="com.saivert.pwvucontrol"] floating enable
+for_window [app_id="pavucontrol"] floating enable
 for_window [app_id="Zoom" title="^zoom$"] floating enable, floating_minimum_size 250 x 400
 
 
@@ -337,6 +338,8 @@ bindsym $mod+Shift+d exec flatpak run com.jetbrains.IntelliJ-IDEA-Community
 bindsym $mod+Shift+o exec flatpak run org.kde.okular
 bindsym $mod+Shift+z exec thunar
 bindsym $mod+Shift+q exec quodlibet --toggle-window
+#bindsym $mod+Shift+v exec flatpak run com.saivert.pwvucontrol
+bindsym $mod+Shift+v exec pavucontrol
 
 bindsym $mod+f workspace number 1
 bindsym $mod+Return workspace number 2

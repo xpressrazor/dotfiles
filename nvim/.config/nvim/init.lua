@@ -27,16 +27,19 @@ vim.keymap.set("", "<Down>", "<Nop>")
 vim.keymap.set("", "<Left>", "<Nop>")
 vim.keymap.set("", "<Right>", "<Nop>")
 
-function Runcpp()
-  -- vim.cmd "write %"
-  vim.cmd "!g++ % -o %:r && ./%:r"
+function Run()
+  if vim.bo.filetype == "java" then
+    vim.cmd "!java %"
+  else
+    vim.cmd "!g++ % -o %:r && ./%:r"
+  end
 end
 
--- vim.keymap.set("", "<F11>", Runcpp)
+vim.keymap.set("", "<F11>", Run)
 
 -- Compile
 --vim.keymap.set("", "<Leader>r", function() vim.cmd "write && !g++ % -o %:r && ./%:r" end, { desc = "Run" })
-vim.keymap.set("", "<Leader>r", Runcpp, { desc = "Run", silent = true })
+vim.keymap.set("", "<Leader>r", Run, { desc = "Run", silent = true })
 
 -- Clear buffer
 vim.keymap.set("", "<Leader>bx", function() vim.cmd ":%d" end, { desc = "Clear" })

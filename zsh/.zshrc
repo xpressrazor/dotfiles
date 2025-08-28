@@ -15,9 +15,9 @@ compinit
 # Set up fzf key bindings and fuzzy completion
 source <(fzf --zsh)
 
-export XDG_CURRENT_DESKTOP=sway
+#export XDG_CURRENT_DESKTOP=sway
 export XDG_SESSION_TYPE=wayland
-export XDG_SESSION_DESKTOP=sway
+#export XDG_SESSION_DESKTOP=sway
 export MOZ_ENABLE_WAYLAND=1
 export QT_QPA_PLATFORM=wayland
 export SDL_VIDEODRIVER=wayland
@@ -89,10 +89,15 @@ export QT_QPA_PLATFORM="wayland;xcb"
 export QT_QPA_PLATFORMTHEME="qt5ct"
 export XCURSOR_PATH=/usr/share/icons:~/.icons
 
+export WLR_RENDERER="vulkan"
+export WLR_NO_HARDWARE_CURSORS="1"
+export XWAYLAND_NO_GLAMOR="1"
+
+
 
 if [ "$TMUX" = "" ]; then tmux; fi
 
 # Enable for sway
-export SWAYSOCK=$(ls /run/user/1000/sway-*)
+#export SWAYSOCK=$(ls /run/user/1000/sway-*)
 
 export PATH=$PATH:/home/dell/Applications/kafka_2.13-4.0.0/bin/
