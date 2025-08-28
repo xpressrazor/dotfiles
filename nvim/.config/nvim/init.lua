@@ -30,6 +30,8 @@ vim.keymap.set("", "<Right>", "<Nop>")
 function Run()
   if vim.bo.filetype == "java" then
     vim.cmd "!java %"
+  elseif vim.bo.filetype == "go" then
+    vim.cmd "!go run %"
   else
     vim.cmd "!g++ % -o %:r && ./%:r"
   end
