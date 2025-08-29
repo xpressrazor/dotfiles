@@ -3,7 +3,7 @@
     "position": "bottom",
     "modules-left": ["custom/app", "hyprland/workspaces", "hyprland/mode"],
     "modules-center": ["hyprland/window"],
-    "modules-right": ["pulseaudio", "clock", "tray", "custom/power"],
+    "modules-right": ["pulseaudio", "backlight", "battery", "clock", "tray", "custom/power"],
 
     "hyprland/window": {
 		"max-length": 50
@@ -75,6 +75,23 @@
 		    "on-scroll-up": "shift_up",
 		    "on-scroll-down": "shift_down"
 	    }
+    },
+
+    "backlight": {
+        "format": "{percent}% {icon}",
+        "format-icons": ["", "", "", "", "", "", "", "", ""]
+    },
+    "battery": {
+        "states": {
+            "warning": 30,
+            "critical": 15
+        },
+        "format": "{capacity}% {icon}",
+        "format-full": "{capacity}% {icon}",
+        "format-charging": "{capacity}% ",
+        "format-plugged": "{capacity}% ",
+        "format-alt": "{time} {icon}",
+        "format-icons": ["", "", "", "", ""]
     },
 
     "custom/power": {
