@@ -14,8 +14,8 @@ window#waybar {
 
 #custom-app {
     min-width: 40px;
-    padding: 1px 1px;
-    margin: 2px 2px;
+    margin-left: 2px;
+    margin-right: 2px;
 }
 
 #workspaces button {
@@ -29,12 +29,13 @@ window#waybar {
 }
 
 #workspaces button.active {
-    background: #eb6f92;
+    background: #6e6a86; 
     margin-right: 0px;
     margin-left: 0px;
     padding-right: 10px;
     padding-left: 10px;
     color: #2a283e;
+    font-weight: bold;
 }
 
 #clock {
@@ -44,8 +45,6 @@ window#waybar {
 
 #battery {
     color: #CDFFDD;
-    margin-top: 2px;
-    margin-bottom: 2px;
 }
 
 #battery.charging, #battery.plugged {
@@ -60,6 +59,7 @@ window#waybar {
 #pulseaudio,
 #backlight {
     padding: 0 10px;
-    margin: 6px 3px;
+    margin-left: 3px;
+    margin-right: 3px;
     color: #e0def4;
 }
