@@ -1,2 +1,2 @@
 #!/bin/sh
-dbus-run-session flatpak run com.obsproject.Studio
+QT_QPA_PLATFORM=wayland dbus-run-session flatpak run com.obsproject.Studio

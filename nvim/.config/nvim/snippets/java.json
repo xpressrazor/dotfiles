@@ -1,0 +1,16 @@
+{
+  "setup": {
+    "prefix": ["java", "sol"],
+    "body": ["import java.util.*;",
+            "",
+            "public class Solution {", 
+            "",
+            "\t$0",
+            "",
+            "\tpublic static void main(String[] args) {",
+            "",
+            "\t}",
+            "}"],
+    "description": "Simple Solution leetcode style"
+  }
+}
