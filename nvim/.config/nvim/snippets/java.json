@@ -12,5 +12,10 @@
             "\t}",
             "}"],
     "description": "Simple Solution leetcode style"
+  },
+  "ats": {
+    "prefix": ["ats"],
+    "body": ["Arrays.toString($0)"],
+    "description": "Arrays.toString()"
   }
 }
