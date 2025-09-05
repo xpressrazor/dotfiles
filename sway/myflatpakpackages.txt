@@ -10,6 +10,7 @@ io.github.aandrew_me.ytdn
 io.github.flattool.Warehouse
 one.ablaze.floorp
 org.audacityteam.Audacity
+org.gnome.Snapshot
 org.gnome.SoundRecorder
 org.gnome.meld
 org.kde.kate
@@ -20,5 +21,4 @@ org.nomacs.ImageLounge
 org.qbittorrent.qBittorrent
 org.tenacityaudio.Tenacity
 org.videolan.VLC
-sa.sy.bluerecorder
 us.zoom.Zoom
