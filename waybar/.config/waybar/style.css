@@ -56,10 +56,16 @@ window#waybar {
     color: #eb6f92;
 }
 
-#pulseaudio,
 #backlight {
     padding: 0 10px;
     margin-left: 3px;
     margin-right: 3px;
+    color: #e0def4;
+}
+
+#pulseaudio {
+    padding: 0 2px;
+    margin-left: 0px;
+    margin-right: 0px;
     color: #e0def4;
 }

@@ -17,5 +17,11 @@
     "prefix": ["ats"],
     "body": ["Arrays.toString($0)"],
     "description": "Arrays.toString()"
+  },
+  "comment": {
+    "prefix": ["/*"],
+    "body": ["/*","$0","*/"],
+    "description": "comment"
   }
+
 }
