@@ -12,12 +12,17 @@ if len(sys.argv) >= 3:
 
     workspacenumbercd = ""
     workspaceid = ""
+    classval = sys.argv[1]
    
-    # If workspace provided, match workspace as well
+    # Using class_name match workspace as well
+    
     if len(sys.argv) == 4:
-        workspaceidcmd = "hyprctl clients -j | jq -r \'.[] | select(.class == \"" + sys.argv[3] + "\") | .workspace.id\'"
-        os.system(workspaceidcmd)
-        workspaceid = os.popen(workspaceidcmd).read();
+        classval = sys.argv[3]
+
+    workspaceidcmd = "hyprctl clients -j | jq -r \'.[] | select(.class == \"" + classval + "\") | .workspace.id\'"
+    
+    os.system(workspaceidcmd)
+    workspaceid = os.popen(workspaceidcmd).read();
 
     if sys.argv[1].count(".") == 2:
         pscmd = 'flatpak ps | grep ' + sys.argv[1];
