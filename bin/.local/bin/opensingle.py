@@ -19,7 +19,8 @@ if len(sys.argv) >= 3:
     if len(sys.argv) == 4:
         classval = sys.argv[3]
 
-    workspaceidcmd = "hyprctl clients -j | jq -r \'.[] | select(.class == \"" + classval + "\") | .workspace.id\'"
+    workspaceidcmd = "hyprctl clients -j | jq -r '.[] | select(.class == \"" + classval + "\") | .workspace.id'"
+
     
     os.system(workspaceidcmd)
     workspaceid = os.popen(workspaceidcmd).read();
