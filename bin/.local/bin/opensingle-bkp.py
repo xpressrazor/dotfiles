@@ -31,8 +31,7 @@ if len(sys.argv) >= 3:
     workspaceid = os.popen(workspaceidcmd).read();
 
     print("workspace id: " + str(workspaceid))
-    
-    
+
     if sys.argv[1].count(".") == 2:
         pscmd = 'flatpak ps | grep ' + sys.argv[1];
         os.system(pscmd)
@@ -40,7 +39,6 @@ if len(sys.argv) >= 3:
 
         if len(result) == 0 or workspaceid.count(sys.argv[2]) == 0:
             subprocess.Popen(['flatpak', 'run', sys.argv[1]])
-
     else:
         hyprcmd = 'hyprctl clients | grep -i class | grep ' + sys.argv[1]
         os.system(hyprcmd)
@@ -48,9 +46,6 @@ if len(sys.argv) >= 3:
         
         if len(result) == 0 or workspaceid.count(sys.argv[2]) == 0:
             subprocess.Popen(sys.argv[1])
-
-
-    os.system("hyprctl dispatch workspace " + sys.argv[2])
 else:
     print("Invalid arguments: opensingle.py <app_name> <workspace_number <class>")
     print("E.g. opensingle.py com.google.Chrome 3 google-chrome")

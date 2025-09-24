@@ -1,13 +1,30 @@
 [ActivityManager]
 _k_friendly_name=Activity Manager
-switch-to-activity-5d1483d4-2e5d-40d1-8614-a9f59a20136d=Meta+Shift+C,none,Switch to activity ""
 switch-to-activity-6e2bdc48-92d7-4294-877e-1ec88dc4a4ed=Meta+Shift+Z,none,Switch to activity ""
-switch-to-activity-7d15e033-baaa-42cb-883d-a23b8be4607d=Meta+Shift+X,none,Switch to activity ""
 
 [KDE Keyboard Layout Switcher]
 Switch to Last-Used Keyboard Layout=Meta+Alt+L,Meta+Alt+L,Switch to Last-Used Keyboard Layout
 Switch to Next Keyboard Layout=Meta+Alt+K,Meta+Alt+K,Switch to Next Keyboard Layout
 _k_friendly_name=Keyboard Layout Switcher
+
+[com.google.Chrome]
+A1A6EA2B7F885BADCD02918BA2005D21-apply_default_highlight=none,none,Default Highlight
+A1A6EA2B7F885BADCD02918BA2005D21-apply_highlight.0=none,none,Highlight #1
+A1A6EA2B7F885BADCD02918BA2005D21-apply_highlight.1=none,none,Highlight #2
+A1A6EA2B7F885BADCD02918BA2005D21-apply_highlight.2=none,none,Highlight #3
+A1A6EA2B7F885BADCD02918BA2005D21-apply_highlight.3=none,none,Highlight #4
+A1A6EA2B7F885BADCD02918BA2005D21-apply_highlight.4=none,none,Highlight #5
+A1A6EA2B7F885BADCD02918BA2005D21-apply_highlight.5=none,none,Highlight #6
+A1A6EA2B7F885BADCD02918BA2005D21-apply_highlight.6=none,none,Highlight #7
+A1A6EA2B7F885BADCD02918BA2005D21-apply_highlight.7=none,none,Highlight #8
+A1A6EA2B7F885BADCD02918BA2005D21-apply_highlight.8=none,none,Highlight #9
+A1A6EA2B7F885BADCD02918BA2005D21-apply_highlight.9=none,none,Highlight #10
+A1A6EA2B7F885BADCD02918BA2005D21-delete_highlight=none,none,Delete
+A1A6EA2B7F885BADCD02918BA2005D21-undo_last_create_highlight=none,none,Undo
+FF8ADC42111E00073972DB9F353435B7-addSite=none,none,Toggle current site
+FF8ADC42111E00073972DB9F353435B7-switchEngine=none,none,Theme generation mode
+FF8ADC42111E00073972DB9F353435B7-toggle=none,none,Toggle extension
+_k_friendly_name=Google Chrome
 
 [kaccess]
 Toggle Screen Reader On and Off=Meta+Alt+S,Meta+Alt+S,Toggle Screen Reader On and Off
@@ -236,9 +253,12 @@ activate task manager entry 6=Meta+6,Meta+6,Activate Task Manager Entry 6
 activate task manager entry 7=Meta+7,Meta+7,Activate Task Manager Entry 7
 activate task manager entry 8=Meta+8,Meta+8,Activate Task Manager Entry 8
 activate task manager entry 9=Meta+9,Meta+9,Activate Task Manager Entry 9
+activate widget 157=none,none,Activate Application Dashboard Widget
 activate widget 26=none,none,Activate Application Dashboard Widget
 activate widget 30=none,none,Activate Activity Bar Widget
 activate widget 36=none,none,Activate Application Dashboard Widget
+activate widget 78=none,none,Activate Application Dashboard Widget
+activate widget 81=none,none,Activate Application Launcher Widget
 clear-history=none,,Clear Clipboard History
 clipboard_action=Meta+Ctrl+X,Meta+Ctrl+X,Automatic Action Popup Menu
 cycle-panels=Meta+Alt+P,Meta+Alt+P,Move keyboard focus between panels

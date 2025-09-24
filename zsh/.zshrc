@@ -86,7 +86,7 @@ alias wo="pomodoro 'work'"
 alias br="pomodoro 'break'"
 
 export QT_QPA_PLATFORM="wayland;xcb"
-export QT_QPA_PLATFORMTHEME="qt5ct"
+export QT_QPA_PLATFORMTHEME="qt6ct"
 export XCURSOR_PATH=/usr/share/icons:~/.icons
 
 export WLR_RENDERER="vulkan"
@@ -100,4 +100,4 @@ if [ "$TMUX" = "" ]; then tmux; fi
 # Enable for sway
 #export SWAYSOCK=$(ls /run/user/1000/sway-*)
 
-export PATH=$PATH:/home/dell/Applications/kafka_2.13-4.0.0/bin/
+export PATH=$PATH:/home/dell/Applications/kafka_2.13-4.0.0/bin/:~/Sync/bin
